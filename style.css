@@ -1,0 +1,252 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 100px;
+  border-bottom: 1px solid #a1a1a150;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+header nav.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 1110px;
+  margin: 0 auto;
+}
+header nav.navigation .nav-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 40px;
+  position: relative;
+}
+header nav.navigation .nav-link:last-child {
+  margin-right: 0;
+}
+header nav.navigation .nav-link:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: calc(100% + 40px);
+  left: -20px;
+  bottom: -39px;
+  background: #fff;
+}
+
+.intro {
+  height: 900px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Rectangle.png);
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: -100px;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.intro .intro__title {
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.intro .intro__slogan {
+  font-size: 48px;
+  width: 829px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 64px;
+}
+.intro .intro__button {
+  background-color: #4985ff;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 36px 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.services {
+  height: 703px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.services h2 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 53px;
+  color: #323232;
+  width: 739px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.services .slogan--description {
+  width: 730px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.services .services__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.services .services__list .services__item {
+  width: 353px;
+  height: 139px;
+  position: relative;
+  margin-bottom: 55px;
+  margin-right: 30px;
+}
+.services .services__list .services__item:last-child {
+  margin-right: 0;
+}
+.services .services__list .services__item .services__subtitle {
+  width: 223px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-left: 130px;
+  margin-top: 46px;
+  margin-bottom: 12px;
+}
+.services .services__list .services__item .services__subtitle::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/project.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #4985ff;
+  border-radius: 50%;
+  left: 10px;
+  top: 10px;
+}
+.services .services__list .services__item .services__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+.services .services__list .services__item .services__description {
+  width: 223px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 130px;
+}
+.services .services__button {
+  background-color: #4985ff;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 36px 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.about-us {
+  height: 797px;
+  background: #f6f6f8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-us .about-us__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 1110px;
+  height: 490px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 70px;
+}
+.about-us .about-us__wrapper .about-us__info {
+  width: 489px;
+  max-height: 400px;
+}
+.about-us .about-us__wrapper .about-us__info .about-us__slogan {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 53px;
+  color: #323232;
+  height: 88px;
+  margin-bottom: 40px;
+}
+.about-us .about-us__wrapper .about-us__info .about-us__text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+  height: 117px;
+  margin-bottom: 30px;
+}
+.about-us .about-us__projects-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.about-us .about-us__projects-list .projects__item {
+  margin-right: 100px;
+}
+.about-us .about-us__projects-list .projects__item:last-child {
+  margin-right: 0;
+}
+.about-us .about-us__projects-list .item__info {
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
