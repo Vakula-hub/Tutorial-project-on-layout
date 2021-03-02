@@ -249,7 +249,13 @@ header nav.navigation .nav-link:hover::after {
   margin-right: 0;
 }
 .about-us .about-us__projects-list .projects__item .item__info {
+  font-size: 36px;
   padding-left: 50px;
+}
+
+.specialisation {
+  height: 500px;
+  background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
 }
 
 /*# sourceMappingURL=style.css.map */

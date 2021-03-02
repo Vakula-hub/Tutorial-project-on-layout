@@ -211,7 +211,6 @@ header {
     @include flex();
     .projects__item {
       position: relative;
-
       width: 104px;
       height: 67px;
       margin-right: 100px;
@@ -219,8 +218,14 @@ header {
         margin-right: 0;
       }
       .item__info {
+        font-size: $fs * 2.25;
         padding-left: 50px;
       }
     }
   }
+}
+//section4
+.specialisation {
+  height: 500px;
+  background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
 }
