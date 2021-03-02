@@ -240,13 +240,16 @@ header nav.navigation .nav-link:hover::after {
   flex-direction: row;
 }
 .about-us .about-us__projects-list .projects__item {
+  position: relative;
+  width: 104px;
+  height: 67px;
   margin-right: 100px;
 }
 .about-us .about-us__projects-list .projects__item:last-child {
   margin-right: 0;
 }
-.about-us .about-us__projects-list .item__info {
-  margin-left: auto;
+.about-us .about-us__projects-list .projects__item .item__info {
+  padding-left: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

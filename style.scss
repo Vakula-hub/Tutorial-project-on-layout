@@ -210,14 +210,16 @@ header {
   .about-us__projects-list {
     @include flex();
     .projects__item {
+      position: relative;
+
+      width: 104px;
+      height: 67px;
       margin-right: 100px;
       &:last-child {
         margin-right: 0;
-        width: 104px;
-        height: 67px;
       }
       .item__info {
-        margin-left: auto;
+        padding-left: 50px;
       }
     }
   }
