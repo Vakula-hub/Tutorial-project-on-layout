@@ -286,8 +286,6 @@ header nav.navigation .nav-link:hover::after {
   flex-direction: column;
   height: 972px;
   position: relative;
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 85px;
 }
 .all-services::before {
   content: "";
@@ -306,6 +304,7 @@ header nav.navigation .nav-link:hover::after {
   justify-content: space-between;
   flex-direction: row;
   position: relative;
+  margin-top: 84px;
   margin-bottom: 70px;
 }
 .all-services .all-services__main .all-services__slogan {
@@ -337,6 +336,7 @@ header nav.navigation .nav-link:hover::after {
   justify-content: space-between;
   flex-direction: row;
   border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 85px;
 }
 .all-services .all-srvices__list .all-services__item {
   width: calc(100% / 3 - 20px);

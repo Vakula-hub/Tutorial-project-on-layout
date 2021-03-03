@@ -252,8 +252,6 @@ header {
   @include flex(center, column);
   height: 972px;
   position: relative;
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 85px;
   &::before {
     content: "";
     height: 490px;
@@ -267,6 +265,7 @@ header {
     @include mainCol();
     @include flex(space-between);
     position: relative;
+    margin-top: 84px;
     margin-bottom: 70px;
     .all-services__slogan {
       @include slogan();
@@ -274,7 +273,6 @@ header {
       color: $white;
     }
     .all-services__more {
-      // position: absolute;
       font-weight: 500;
       font-size: $fs;
       line-height: $fs * 1.25;
@@ -292,6 +290,7 @@ header {
     @include mainCol();
     @include flex(space-between);
     border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 85px;
     .all-services__item {
       width: calc(100% / 3 - 20px);
       height: 544px;
