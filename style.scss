@@ -70,12 +70,15 @@ header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(./images/Rectangle.png);
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   margin-top: -100px;
   color: $white;
   font-size: $fs;
   @include flex(center, column);
   .intro__title {
+    @include mainCol();
+    @include flex(center);
     font-weight: 500;
     line-height: $fs * 1.25;
     margin-bottom: 20px;
@@ -234,7 +237,6 @@ header {
           height: 30px;
           left: 0;
           top: 8.8px;
-          // display: flex;
         }
       }
       .item__slogan {
@@ -245,8 +247,78 @@ header {
     }
   }
 }
-//section4
-.specialisation {
-  height: 500px;
-  background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+//section four
+.all-services {
+  @include flex(center, column);
+  height: 972px;
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 85px;
+  &::before {
+    content: "";
+    height: 490px;
+    width: 100%;
+    background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .all-services__main {
+    @include mainCol();
+    @include flex(space-between);
+    position: relative;
+    margin-bottom: 70px;
+    .all-services__slogan {
+      @include slogan();
+      width: 540px;
+      color: $white;
+    }
+    .all-services__more {
+      // position: absolute;
+      font-weight: 500;
+      font-size: $fs;
+      line-height: $fs * 1.25;
+      color: $white;
+      padding: 13px 36px 15px;
+      text-align: center;
+      width: 200px;
+      height: 45px;
+      background: $primery;
+      box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+      border-radius: 30px;
+    }
+  }
+  .all-srvices__list {
+    @include mainCol();
+    @include flex(space-between);
+    border-bottom: 1px solid #e0e0e0;
+    .all-services__item {
+      width: calc(100% / 3 - 20px);
+      height: 544px;
+      margin-bottom: 85px;
+      .all-services__image {
+        margin-bottom: 30px;
+      }
+      .all-services__slogan {
+        font-weight: 600;
+        font-size: $fs + 2px;
+        line-height: $fs + 6px;
+        margin-bottom: 30px;
+        & span {
+          color: $primery;
+        }
+      }
+      .all-services__text {
+        @include text();
+        margin-bottom: 30px;
+      }
+      .item__more {
+        font-size: $fs;
+        line-height: $fs * 1.25;
+        font-weight: 500;
+        color: $primery;
+        text-decoration-line: underline;
+      }
+    }
+  }
 }

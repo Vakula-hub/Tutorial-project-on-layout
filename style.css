@@ -71,6 +71,7 @@ header nav.navigation .nav-link:hover::after {
   height: 900px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Rectangle.png);
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   margin-top: -100px;
   color: #fff;
@@ -81,6 +82,12 @@ header nav.navigation .nav-link:hover::after {
   flex-direction: column;
 }
 .intro .intro__title {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 20px;
@@ -272,9 +279,94 @@ header nav.navigation .nav-link:hover::after {
   color: #999999;
 }
 
-.specialisation {
-  height: 500px;
+.all-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 972px;
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 85px;
+}
+.all-services::before {
+  content: "";
+  height: 490px;
+  width: 100%;
   background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.all-services .all-services__main {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 70px;
+}
+.all-services .all-services__main .all-services__slogan {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 53px;
+  color: #323232;
+  width: 540px;
+  color: #fff;
+}
+.all-services .all-services__main .all-services__more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  padding: 13px 36px 15px;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  background: #4985ff;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+}
+.all-services .all-srvices__list {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid #e0e0e0;
+}
+.all-services .all-srvices__list .all-services__item {
+  width: calc(100% / 3 - 20px);
+  height: 544px;
+  margin-bottom: 85px;
+}
+.all-services .all-srvices__list .all-services__item .all-services__image {
+  margin-bottom: 30px;
+}
+.all-services .all-srvices__list .all-services__item .all-services__slogan {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.all-services .all-srvices__list .all-services__item .all-services__slogan span {
+  color: #4985ff;
+}
+.all-services .all-srvices__list .all-services__item .all-services__text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+.all-services .all-srvices__list .all-services__item .item__more {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #4985ff;
+  text-decoration-line: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
