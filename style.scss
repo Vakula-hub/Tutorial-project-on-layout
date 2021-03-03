@@ -104,7 +104,7 @@ header {
 }
 // second section
 .services {
-  height: 703px;
+  min-height: 703px;
   background: #fff;
   position: relative;
   @include flex(center, column);
@@ -112,6 +112,7 @@ header {
     @include slogan;
     width: 739px;
     text-align: center;
+    margin-top: 110px;
     margin-bottom: 50px;
   }
   .slogan--description {
@@ -121,16 +122,14 @@ header {
     margin-bottom: 70px;
   }
   .services__list {
+    @include mainCol();
     @include flex(center);
+    flex-wrap: wrap;
     .services__item {
-      width: 353px;
-      height: 139px;
+      width: calc(100% / 3 - 18px);
       position: relative;
       margin-bottom: 55px;
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0;
-      }
+
       .services__subtitle {
         width: 223px;
         font-size: $fs + 2;
@@ -181,6 +180,7 @@ header {
     padding: 13px 36px 15px;
     font-weight: 500;
     line-height: $fs * 1.25;
+    margin-bottom: 105px;
   }
 }
 // third section
@@ -200,17 +200,18 @@ header {
       max-height: 400px;
       .about-us__slogan {
         @include slogan();
-        // height: 88px;
         margin-bottom: 40px;
       }
       .about-us__text {
         @include text();
-        // height: 117px;
+        overflow: hidden;
+        max-height: 117px;
         margin-bottom: 30px;
       }
       .about-us__more {
         font-size: $fs;
         line-height: $fs * 1.25;
+        font-weight: 500;
         color: $primery;
         text-decoration: underline;
       }
@@ -250,10 +251,9 @@ header {
 //section four
 .all-services {
   @include flex(center, column);
-  height: 972px;
+  min-height: 972px;
   position: relative;
   border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 85px;
   &::before {
     content: "";
     height: 490px;
@@ -267,6 +267,7 @@ header {
     @include mainCol();
     @include flex(space-between);
     position: relative;
+    margin-top: 84px;
     margin-bottom: 70px;
     .all-services__slogan {
       @include slogan();
@@ -274,7 +275,6 @@ header {
       color: $white;
     }
     .all-services__more {
-      // position: absolute;
       font-weight: 500;
       font-size: $fs;
       line-height: $fs * 1.25;
@@ -291,10 +291,11 @@ header {
   .all-srvices__list {
     @include mainCol();
     @include flex(space-between);
+    margin-bottom: 85px;
+    flex-wrap: wrap;
     border-bottom: 1px solid #e0e0e0;
     .all-services__item {
       width: calc(100% / 3 - 20px);
-      height: 544px;
       margin-bottom: 85px;
       .all-services__image {
         margin-bottom: 30px;
