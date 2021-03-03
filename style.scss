@@ -197,13 +197,19 @@ header {
       max-height: 400px;
       .about-us__slogan {
         @include slogan();
-        height: 88px;
+        // height: 88px;
         margin-bottom: 40px;
       }
       .about-us__text {
         @include text();
-        height: 117px;
+        // height: 117px;
         margin-bottom: 30px;
+      }
+      .about-us__more {
+        font-size: $fs;
+        line-height: $fs * 1.25;
+        color: $primery;
+        text-decoration: underline;
       }
     }
   }
@@ -220,6 +226,21 @@ header {
       .item__info {
         font-size: $fs * 2.25;
         padding-left: 50px;
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url(./images/projects-item__image.png);
+          width: 30px;
+          height: 30px;
+          left: 0;
+          top: 8.8px;
+          // display: flex;
+        }
+      }
+      .item__slogan {
+        font-size: $fs;
+        line-height: $fs + 9;
+        color: $grey;
       }
     }
   }
