@@ -27,6 +27,10 @@ ul {
   padding: 0;
 }
 
+* .empty {
+  margin-bottom: 0px !important;
+}
+
 header {
   height: 100px;
   border-bottom: 1px solid #a1a1a150;
@@ -101,14 +105,18 @@ header nav.navigation .nav-link:hover::after {
   line-height: 64px;
 }
 .intro .intro__button {
-  background-color: #4985ff;
-  border: none;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 16px;
-  padding: 13px 36px 15px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 20px;
+  color: #fff;
+  padding: 13px 36px 15px;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  background: #4985ff;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  border: none;
 }
 
 .services {
@@ -121,7 +129,7 @@ header nav.navigation .nav-link:hover::after {
   flex-direction: column;
 }
 .services h2 {
-  font-size: 35px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 53px;
   color: #323232;
@@ -192,14 +200,18 @@ header nav.navigation .nav-link:hover::after {
   margin-left: 130px;
 }
 .services .services__button {
-  background-color: #4985ff;
-  border: none;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 16px;
-  padding: 13px 36px 15px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 20px;
+  color: #fff;
+  padding: 13px 36px 15px;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  background: #4985ff;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  border: none;
   margin-bottom: 105px;
 }
 
@@ -227,7 +239,7 @@ header nav.navigation .nav-link:hover::after {
   max-height: 400px;
 }
 .about-us .about-us__wrapper .about-us__info .about-us__slogan {
-  font-size: 35px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 53px;
   color: #323232;
@@ -312,7 +324,7 @@ header nav.navigation .nav-link:hover::after {
   margin-bottom: 70px;
 }
 .all-services .all-services__main .all-services__slogan {
-  font-size: 35px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 53px;
   color: #323232;
@@ -331,6 +343,7 @@ header nav.navigation .nav-link:hover::after {
   background: #4985ff;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
+  border: none;
 }
 .all-services .all-srvices__list {
   width: 1110px;
@@ -371,6 +384,65 @@ header nav.navigation .nav-link:hover::after {
   font-weight: 500;
   color: #4985ff;
   text-decoration-line: underline;
+}
+
+.all-projects {
+  min-height: 776px;
+  position: relative;
+  background-color: #f6f6f8;
+}
+.all-projects .all-projects__wrapper {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.all-projects .all-projects__wrapper .all-projects__slogan {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 53px;
+  color: #323232;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #000000;
+}
+.all-projects .all-projects__wrapper .all-projects__text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+  width: 730px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.all-projects .all-projects__wrapper .all-projects__list {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.all-projects .all-projects__wrapper .all-projects__list .list__item {
+  width: calc(100% / 4 - 22.5px);
+  margin-bottom: 50px;
+}
+.all-projects .all-projects__wrapper .all-projects__more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  padding: 13px 36px 15px;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  background: #4985ff;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */

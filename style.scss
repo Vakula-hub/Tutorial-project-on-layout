@@ -18,7 +18,7 @@ $baseAlign: center;
   margin: 0 auto;
 }
 @mixin slogan {
-  font-size: $fs * 2.1875;
+  font-size: $fs * 2.25;
   font-weight: bold;
   line-height: $fs * 3.3125;
   color: $dark;
@@ -27,6 +27,20 @@ $baseAlign: center;
   font-size: $fs;
   line-height: $fs + 9;
   color: $grey;
+}
+@mixin button {
+  font-weight: 500;
+  font-size: $fs;
+  line-height: $fs * 1.25;
+  color: $white;
+  padding: 13px 36px 15px;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  background: $primery;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  border: none;
 }
 // header
 header {
@@ -92,14 +106,7 @@ header {
     line-height: $fs * 4;
   }
   .intro__button {
-    background-color: $primery;
-    border: none;
-    border-radius: 30px;
-    color: $white;
-    font-size: $fs;
-    padding: 13px 36px 15px;
-    font-weight: 500;
-    line-height: $fs * 1.25;
+    @include button();
   }
 }
 // second section
@@ -129,7 +136,6 @@ header {
       width: calc(100% / 3 - 18px);
       position: relative;
       margin-bottom: 55px;
-
       .services__subtitle {
         width: 223px;
         font-size: $fs + 2;
@@ -172,14 +178,7 @@ header {
     }
   }
   .services__button {
-    background-color: $primery;
-    border: none;
-    border-radius: 30px;
-    color: $white;
-    font-size: $fs;
-    padding: 13px 36px 15px;
-    font-weight: 500;
-    line-height: $fs * 1.25;
+    @include button();
     margin-bottom: 105px;
   }
 }
@@ -248,7 +247,7 @@ header {
     }
   }
 }
-//section four
+//fourth section
 .all-services {
   @include flex(center, column);
   min-height: 972px;
@@ -275,17 +274,7 @@ header {
       color: $white;
     }
     .all-services__more {
-      font-weight: 500;
-      font-size: $fs;
-      line-height: $fs * 1.25;
-      color: $white;
-      padding: 13px 36px 15px;
-      text-align: center;
-      width: 200px;
-      height: 45px;
-      background: $primery;
-      box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-      border-radius: 30px;
+      @include button();
     }
   }
   .all-srvices__list {
@@ -320,6 +309,41 @@ header {
         color: $primery;
         text-decoration-line: underline;
       }
+    }
+  }
+}
+// fifth section
+.all-projects {
+  min-height: 776px;
+  position: relative;
+  background-color: #f6f6f8;
+  .all-projects__wrapper {
+    @include mainCol();
+    @include flex(center, column);
+    .all-projects__slogan {
+      @include slogan();
+      margin-top: 100px;
+      margin-bottom: 50px;
+      color: #000000;
+    }
+    .all-projects__text {
+      @include text();
+      width: 730px;
+      margin-bottom: 70px;
+      text-align: center;
+    }
+    .all-projects__list {
+      @include mainCol();
+      @include flex(space-between);
+      flex-wrap: wrap;
+      .list__item {
+        width: calc(100% / 4 - 22.5px);
+        margin-bottom: 50px;
+      }
+    }
+    .all-projects__more {
+      @include button();
+      margin-bottom: 130px;
     }
   }
 }
