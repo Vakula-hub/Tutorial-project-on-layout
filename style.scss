@@ -19,7 +19,7 @@ $baseAlign: center;
 }
 @mixin slogan {
   font-size: $fs * 2.25;
-  font-weight: bold;
+  font-weight: 700;
   line-height: $fs * 3.3125;
   color: $dark;
 }
@@ -117,12 +117,12 @@ header {
   @include flex(center, column);
   h2 {
     @include slogan;
-    width: 739px;
+    width: 751px;
     text-align: center;
     margin-top: 110px;
     margin-bottom: 50px;
   }
-  .slogan--description {
+  .slogan__description {
     width: 730px;
     @include text;
     text-align: center;

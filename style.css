@@ -130,15 +130,15 @@ header nav.navigation .nav-link:hover::after {
 }
 .services h2 {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 53px;
   color: #323232;
-  width: 739px;
+  width: 751px;
   text-align: center;
   margin-top: 110px;
   margin-bottom: 50px;
 }
-.services .slogan--description {
+.services .slogan__description {
   width: 730px;
   font-size: 16px;
   line-height: 25px;
@@ -240,7 +240,7 @@ header nav.navigation .nav-link:hover::after {
 }
 .about-us .about-us__wrapper .about-us__info .about-us__slogan {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 53px;
   color: #323232;
   margin-bottom: 40px;
@@ -325,7 +325,7 @@ header nav.navigation .nav-link:hover::after {
 }
 .all-services .all-services__main .all-services__slogan {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 53px;
   color: #323232;
   width: 540px;
@@ -401,7 +401,7 @@ header nav.navigation .nav-link:hover::after {
 }
 .all-projects .all-projects__wrapper .all-projects__slogan {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 53px;
   color: #323232;
   margin-top: 100px;
