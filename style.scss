@@ -23,8 +23,15 @@ $baseAlign: center;
   line-height: $fs * 3.3125;
   color: $dark;
 }
+@mixin smallSlogan {
+  font-size: $fs + 2;
+  font-weight: 600;
+  line-height: $fs + 6;
+  color: #000;
+}
 @mixin text {
   font-size: $fs;
+  font-weight: 400;
   line-height: $fs + 9;
   color: $grey;
 }
@@ -89,12 +96,13 @@ header {
   margin-top: -100px;
   color: $white;
   font-size: $fs;
-  @include flex(center, column);
+  @include flex(flex-start, column);
   .intro__title {
     @include mainCol();
-    @include flex(center);
     font-weight: 500;
     line-height: $fs * 1.25;
+    text-align: center;
+    margin-top: 319px;
     margin-bottom: 20px;
   }
   .intro__slogan {
@@ -107,6 +115,7 @@ header {
   }
   .intro__button {
     @include button();
+    margin-bottom: 318px;
   }
 }
 // second section
@@ -114,7 +123,7 @@ header {
   min-height: 703px;
   background: #fff;
   position: relative;
-  @include flex(center, column);
+  @include flex(flex-start, column);
   h2 {
     @include slogan;
     width: 751px;
@@ -138,9 +147,7 @@ header {
       margin-bottom: 55px;
       .services__subtitle {
         width: 223px;
-        font-size: $fs + 2;
-        line-height: $fs + 6;
-        font-weight: 600;
+        @include smallSlogan();
         margin-left: 130px;
         margin-top: 46px;
         margin-bottom: 12px;
@@ -187,16 +194,19 @@ header {
   height: 797px;
   background: #f6f6f8;
   position: relative;
-  @include flex(center, column);
+  @include flex(flex-start, column);
   .about-us__wrapper {
     @include flex(space-between);
     width: 1110px;
     height: 490px;
+    align-items: flex-start;
     border-bottom: 1px solid #e0e0e0;
+    margin-top: 100px;
     margin-bottom: 70px;
     .about-us__info {
       width: 489px;
       max-height: 400px;
+      margin-top: 52px;
       .about-us__slogan {
         @include slogan();
         margin-bottom: 40px;
@@ -223,6 +233,7 @@ header {
       width: 104px;
       height: 67px;
       margin-right: 100px;
+      margin-bottom: 70px;
       &:last-child {
         margin-right: 0;
       }
@@ -289,10 +300,8 @@ header {
       .all-services__image {
         margin-bottom: 30px;
       }
-      .all-services__slogan {
-        font-weight: 600;
-        font-size: $fs + 2px;
-        line-height: $fs + 6px;
+      .all-services__subtitle {
+        @include smallSlogan();
         margin-bottom: 30px;
         & span {
           color: $primery;
@@ -316,34 +325,165 @@ header {
 .all-projects {
   min-height: 776px;
   position: relative;
-  background-color: #f6f6f8;
-  .all-projects__wrapper {
+  @include flex(flex-start, column);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f8;
+    top: 0;
+    z-index: -1;
+  }
+}
+.all-projects__wrapper {
+  @include mainCol();
+  @include flex(center, column);
+  top: 0px;
+  margin-top: 100px;
+  .all-projects__slogan {
+    @include slogan();
+    // margin-top: 100px;
+    margin-bottom: 50px;
+    color: #000000;
+  }
+  .all-projects__text {
+    @include text();
+    width: 730px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .all-projects__list {
+    @include mainCol();
+    @include flex(space-between);
+    flex-wrap: wrap;
+    .list__item {
+      width: calc(100% / 4 - 22.5px);
+      margin-bottom: 50px;
+    }
+  }
+  .all-projects__more {
+    @include button();
+    margin-bottom: 130px;
+  }
+}
+
+// sixth section
+.video {
+  @include flex(flex-start, column);
+  height: 1082px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 570px;
+    width: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15)
+      ),
+      url(./images/video__background.png);
+    background-repeat: round;
+    top: 0;
+    z-index: -1;
+  }
+  .video__wrapper {
     @include mainCol();
     @include flex(center, column);
-    .all-projects__slogan {
-      @include slogan();
-      margin-top: 100px;
-      margin-bottom: 50px;
-      color: #000000;
-    }
-    .all-projects__text {
+    border-bottom: 1px solid #e0e0e0;
+    margin-top: 70px;
+    margin-bottom: 85px;
+  }
+  .video__slogan {
+    @include slogan();
+    color: $white;
+    margin-bottom: 30px;
+  }
+  .video__text {
+    @include text();
+    color: $white;
+    margin-bottom: 50px;
+  }
+  .video__content {
+    position: relative;
+    width: 970px;
+    height: 430px;
+    background: url(./images/video__image.png);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 85px;
+    .video__button {
+      position: relative;
       @include text();
-      width: 730px;
-      margin-bottom: 70px;
-      text-align: center;
-    }
-    .all-projects__list {
-      @include mainCol();
-      @include flex(space-between);
-      flex-wrap: wrap;
-      .list__item {
-        width: calc(100% / 4 - 22.5px);
-        margin-bottom: 50px;
+      color: $white;
+      font-weight: 500;
+      width: 300px;
+      height: 100px;
+      top: calc(50% - 40px);
+      left: calc(50% - 150px);
+      background: transparent;
+      border: 1px solid #ffffff;
+      border-radius: 200px;
+      padding: 41px 29px 40px 121px;
+      &::before {
+        content: "";
+        background-image: url(./images/video__play-button.png);
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 20px;
+        left: 40px;
       }
     }
-    .all-projects__more {
-      @include button();
-      margin-bottom: 130px;
+  }
+  .subscribe {
+    @include mainCol();
+    @include flex(flex-start, column);
+    height: 177px;
+    .subscribe__slogan {
+      @include smallSlogan();
+      margin-bottom: 20px;
+    }
+    .subscribe__text {
+      @include text();
+      margin-bottom: 30px;
+    }
+    .subscribe__form {
+      margin-bottom: 35px;
+    }
+    .subscribe__statement {
+      font-size: $fs - 3px;
+      font-weight: 400;
+      line-height: $fs + 5px;
+      color: $grey;
+      margin-bottom: 85px;
+    }
+    .subscribe__form {
+      @include flex();
+      input[type="email"] {
+        width: 299px;
+        height: 45px;
+        font-size: $fs - 3px;
+        font-weight: 400;
+        line-height: $fs + 5px;
+        color: $grey;
+        border: 1px solid #f2f2f2;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+        border-radius: 30px 0px 0px 30px;
+        padding: 15px 175px 13px 33px;
+      }
+      label {
+        order: 1;
+
+        button {
+          @include button();
+          width: 190px;
+          padding-left: 26px;
+          border-radius: 0px 30px 30px 0px;
+        }
+      }
     }
   }
 }

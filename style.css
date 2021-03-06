@@ -5,7 +5,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul {
   margin: 0;
 }
 
@@ -82,18 +83,16 @@ header nav.navigation .nav-link:hover::after {
   font-size: 16px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 .intro .intro__title {
   width: 1110px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   font-weight: 500;
   line-height: 20px;
+  text-align: center;
+  margin-top: 319px;
   margin-bottom: 20px;
 }
 .intro .intro__slogan {
@@ -117,6 +116,7 @@ header nav.navigation .nav-link:hover::after {
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   border: none;
+  margin-bottom: 318px;
 }
 
 .services {
@@ -125,7 +125,7 @@ header nav.navigation .nav-link:hover::after {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 .services h2 {
@@ -141,6 +141,7 @@ header nav.navigation .nav-link:hover::after {
 .services .slogan__description {
   width: 730px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 25px;
   color: #999999;
   text-align: center;
@@ -163,8 +164,9 @@ header nav.navigation .nav-link:hover::after {
 .services .services__list .services__item .services__subtitle {
   width: 223px;
   font-size: 18px;
-  line-height: 22px;
   font-weight: 600;
+  line-height: 22px;
+  color: #000;
   margin-left: 130px;
   margin-top: 46px;
   margin-bottom: 12px;
@@ -221,7 +223,7 @@ header nav.navigation .nav-link:hover::after {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 .about-us .about-us__wrapper {
@@ -231,12 +233,15 @@ header nav.navigation .nav-link:hover::after {
   flex-direction: row;
   width: 1110px;
   height: 490px;
+  align-items: flex-start;
   border-bottom: 1px solid #e0e0e0;
+  margin-top: 100px;
   margin-bottom: 70px;
 }
 .about-us .about-us__wrapper .about-us__info {
   width: 489px;
   max-height: 400px;
+  margin-top: 52px;
 }
 .about-us .about-us__wrapper .about-us__info .about-us__slogan {
   font-size: 36px;
@@ -247,6 +252,7 @@ header nav.navigation .nav-link:hover::after {
 }
 .about-us .about-us__wrapper .about-us__info .about-us__text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 25px;
   color: #999999;
   overflow: hidden;
@@ -271,6 +277,7 @@ header nav.navigation .nav-link:hover::after {
   width: 104px;
   height: 67px;
   margin-right: 100px;
+  margin-bottom: 70px;
 }
 .about-us .about-us__projects-list .projects__item:last-child {
   margin-right: 0;
@@ -363,17 +370,19 @@ header nav.navigation .nav-link:hover::after {
 .all-services .all-srvices__list .all-services__item .all-services__image {
   margin-bottom: 30px;
 }
-.all-services .all-srvices__list .all-services__item .all-services__slogan {
-  font-weight: 600;
+.all-services .all-srvices__list .all-services__item .all-services__subtitle {
   font-size: 18px;
+  font-weight: 600;
   line-height: 22px;
+  color: #000;
   margin-bottom: 30px;
 }
-.all-services .all-srvices__list .all-services__item .all-services__slogan span {
+.all-services .all-srvices__list .all-services__item .all-services__subtitle span {
   color: #4985ff;
 }
 .all-services .all-srvices__list .all-services__item .all-services__text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 25px;
   color: #999999;
   margin-bottom: 30px;
@@ -389,34 +398,49 @@ header nav.navigation .nav-link:hover::after {
 .all-projects {
   min-height: 776px;
   position: relative;
-  background-color: #f6f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
-.all-projects .all-projects__wrapper {
+.all-projects::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f8;
+  top: 0;
+  z-index: -1;
+}
+
+.all-projects__wrapper {
   width: 1110px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  top: 0px;
+  margin-top: 100px;
 }
-.all-projects .all-projects__wrapper .all-projects__slogan {
+.all-projects__wrapper .all-projects__slogan {
   font-size: 36px;
   font-weight: 700;
   line-height: 53px;
   color: #323232;
-  margin-top: 100px;
   margin-bottom: 50px;
   color: #000000;
 }
-.all-projects .all-projects__wrapper .all-projects__text {
+.all-projects__wrapper .all-projects__text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 25px;
   color: #999999;
   width: 730px;
   margin-bottom: 70px;
   text-align: center;
 }
-.all-projects .all-projects__wrapper .all-projects__list {
+.all-projects__wrapper .all-projects__list {
   width: 1110px;
   margin: 0 auto;
   display: flex;
@@ -425,11 +449,11 @@ header nav.navigation .nav-link:hover::after {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.all-projects .all-projects__wrapper .all-projects__list .list__item {
+.all-projects__wrapper .all-projects__list .list__item {
   width: calc(100% / 4 - 22.5px);
   margin-bottom: 50px;
 }
-.all-projects .all-projects__wrapper .all-projects__more {
+.all-projects__wrapper .all-projects__more {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -443,6 +467,159 @@ header nav.navigation .nav-link:hover::after {
   border-radius: 30px;
   border: none;
   margin-bottom: 130px;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 1082px;
+  position: relative;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  height: 570px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(./images/video__background.png);
+  background-repeat: round;
+  top: 0;
+  z-index: -1;
+}
+.video .video__wrapper {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 70px;
+  margin-bottom: 85px;
+}
+.video .video__slogan {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 53px;
+  color: #323232;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.video .video__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #999999;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.video .video__content {
+  position: relative;
+  width: 970px;
+  height: 430px;
+  background: url(./images/video__image.png);
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 85px;
+}
+.video .video__content .video__button {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #999999;
+  color: #fff;
+  font-weight: 500;
+  width: 300px;
+  height: 100px;
+  top: calc(50% - 40px);
+  left: calc(50% - 150px);
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 200px;
+  padding: 41px 29px 40px 121px;
+}
+.video .video__content .video__button::before {
+  content: "";
+  background-image: url(./images/video__play-button.png);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+.video .subscribe {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 177px;
+}
+.video .subscribe .subscribe__slogan {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.video .subscribe .subscribe__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+.video .subscribe .subscribe__form {
+  margin-bottom: 35px;
+}
+.video .subscribe .subscribe__statement {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #999999;
+  margin-bottom: 85px;
+}
+.video .subscribe .subscribe__form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.video .subscribe .subscribe__form input[type=email] {
+  width: 299px;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #999999;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px 0px 0px 30px;
+  padding: 15px 175px 13px 33px;
+}
+.video .subscribe .subscribe__form label {
+  order: 1;
+}
+.video .subscribe .subscribe__form label button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  padding: 13px 36px 15px;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  background: #4985ff;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  border: none;
+  width: 190px;
+  padding-left: 26px;
+  border-radius: 0px 30px 30px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
