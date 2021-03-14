@@ -35,20 +35,80 @@ $baseAlign: center;
 @mixin slogan {
   font-size: $fs * 2.25;
   font-weight: 700;
-  line-height: $fs * 3.3125;
+  line-height: $fs + 37px;
   color: $dark;
+  @include _1280 {
+    font-size: $fs + 14px;
+    line-height: $fs + 31px;
+  }
+  @include _1024 {
+    font-size: $fs + 11px;
+    line-height: $fs + 26px;
+  }
+  @include _768 {
+    font-size: $fs + 3.5px;
+    line-height: $fs + 19px;
+  }
+  @include _640 {
+    font-size: $fs + 0.5px;
+    line-height: $fs * 2;
+  }
+  @include _400 {
+    font-size: $fs - 2.5px;
+    line-height: $fs + 11px;
+  }
 }
 @mixin smallSlogan {
   font-size: $fs + 2;
   font-weight: 600;
   line-height: $fs + 6;
   color: #000;
+  @include _1280 {
+    font-size: $fs - 1px;
+    line-height: $fs + 2px;
+  }
+  @include _1024 {
+    font-size: $fs - 3px;
+    line-height: $fs;
+  }
+  @include _768 {
+    font-size: $fs - 6px;
+    line-height: $fs - 4px;
+  }
+  @include _640 {
+    font-size: $fs / 2;
+    line-height: $fs - 6px;
+  }
+  @include _400 {
+    font-size: $fs - 9px;
+    line-height: $fs - 7px;
+  }
 }
 @mixin text {
   font-size: $fs;
   font-weight: 400;
   line-height: $fs + 9;
   color: $grey;
+  @include _1280 {
+    font-size: $fs - 1px;
+    line-height: $fs + 7px;
+  }
+  @include _1024 {
+    font-size: $fs - 4px;
+    line-height: $fs + 2.75px;
+  }
+  @include _768 {
+    font-size: $fs - 7px;
+    line-height: $fs - 2px;
+  }
+  @include _640 {
+    font-size: $fs - 9px;
+    line-height: $fs - 5px;
+  }
+  @include _400 {
+    font-size: $fs / 3;
+    line-height: $fs - 8px;
+  }
 }
 @mixin button {
   font-weight: 500;
@@ -64,7 +124,7 @@ $baseAlign: center;
   border: none;
   @include _1280 {
     font-size: $fs - 1px;
-    font-size: $fs + 1px;
+    line-height: $fs + 1px;
     padding: 13px 25px 13px;
   }
   @include _1024 {
@@ -326,37 +386,99 @@ header {
 
 // second section
 .services {
-  min-height: 703px;
+  // ma-height: 703px;
   background: #fff;
   position: relative;
   @include flex(flex-start, column);
+  @include mainCol();
   h2 {
     @include slogan;
     max-width: 751px;
     text-align: center;
     margin-top: 110px;
     margin-bottom: 50px;
+    @include _1280 {
+      margin-top: 92px;
+    }
+    @include _1024 {
+      margin-top: 73px;
+      margin-bottom: 38px;
+    }
+    @include _768 {
+      margin-top: 55px;
+    }
+    @include _640 {
+      margin-top: 55px;
+      margin-bottom: 25px;
+    }
+    @include _400 {
+      margin-top: 37px;
+    }
   }
   .slogan__description {
-    max-width: 730px;
+    // max-width: 730px;
     @include text;
     text-align: center;
     margin-bottom: 70px;
+    @include _1024 {
+      margin-bottom: 53px;
+    }
+    @include _640 {
+      margin-bottom: 35px;
+    }
   }
   .services__list {
-    @include mainCol();
     @include flex(center);
     flex-wrap: wrap;
     .services__item {
       width: calc(100% / 3 - 18px);
       position: relative;
       margin-bottom: 55px;
+      @include _1280 {
+        width: calc(100% / 2 - 40px);
+        margin-bottom: 46px;
+      }
+      @include _1024 {
+        margin-bottom: 40px;
+      }
+      @include _768 {
+        width: calc(100% / 2 - 20px);
+        margin-bottom: 30px;
+      }
+      @include _640 {
+        width: calc(100% / 2 - 40px);
+        margin-bottom: 24px;
+      }
+      @include _400 {
+        width: calc(80% - 80px);
+        margin-bottom: 21px;
+      }
       .services__subtitle {
         width: 223px;
         @include smallSlogan();
         margin-left: 130px;
         margin-top: 46px;
         margin-bottom: 12px;
+        @include _1280 {
+          margin-left: 112px;
+          margin-top: 40px;
+        }
+        @include _1024 {
+          margin-left: 100px;
+          margin-top: 35px;
+        }
+        @include _768 {
+          margin-left: 81px;
+          margin-top: 29px;
+        }
+        @include _640 {
+          margin-left: 69px;
+          margin-top: 24px;
+        }
+        @include _400 {
+          margin-left: 63px;
+          margin-top: 22px;
+        }
         &::before {
           content: "";
           position: absolute;
@@ -369,6 +491,39 @@ header {
           border-radius: 50%;
           left: 10px;
           top: 10px;
+          @include _1280 {
+            width: 75px;
+            height: 75px;
+            left: 8px;
+            top: 8px;
+          }
+          @include _1024 {
+            width: 65px;
+            height: 65px;
+            left: 7px;
+            top: 7px;
+          }
+          @include _768 {
+            background-size: 30px;
+            width: 50px;
+            height: 50px;
+            left: 6px;
+            top: 6px;
+          }
+          @include _640 {
+            background-size: 25px;
+            width: 40px;
+            height: 40px;
+            left: 5px;
+            top: 5px;
+          }
+          @include _400 {
+            background-size: 20px;
+            width: 35px;
+            height: 35px;
+            left: 4px;
+            top: 4px;
+          }
         }
         &::after {
           content: "";
@@ -379,20 +534,78 @@ header {
           border-radius: 50%;
           left: 0;
           top: 0;
+
+          @include _1280 {
+            width: 92px;
+            height: 92px;
+          }
+          @include _1024 {
+            width: 80px;
+            height: 80px;
+          }
+          @include _768 {
+            width: 61px;
+            height: 61px;
+          }
+          @include _640 {
+            width: 49px;
+            height: 49px;
+          }
+          @include _400 {
+            width: 43px;
+            height: 43px;
+          }
         }
       }
       .services__description {
-        width: 223px;
+        max-width: 223px;
         font-size: $fs - 2;
         font-weight: 400;
         line-height: $fs + 6;
         margin-left: 130px;
+        @include _1280 {
+          font-size: $fs * 0.75;
+          margin-left: 112px;
+          line-height: 18px;
+        }
+        @include _1024 {
+          font-size: $fs - 6px;
+          margin-left: 100px;
+          line-height: 16px;
+        }
+        @include _768 {
+          font-size: $fs / 2;
+          margin-left: 81px;
+          line-height: 12px;
+        }
+        @include _640 {
+          font-size: $fs - 10px;
+          margin-left: 69px;
+          line-height: 10px;
+        }
+        @include _400 {
+          font-size: $fs - 11px;
+          margin-left: 63px;
+          line-height: 9px;
+        }
       }
     }
   }
   .services__button {
     @include button();
     margin-bottom: 105px;
+    @include _1280 {
+      margin-bottom: 42px;
+    }
+    @include _1024 {
+      margin-bottom: 33px;
+    }
+    @include _768 {
+      margin-bottom: 25px;
+    }
+    @include _400 {
+      margin-bottom: 17px;
+    }
   }
 }
 // third section
