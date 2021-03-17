@@ -191,9 +191,9 @@ header {
   @include _640 {
     height: 50px;
   }
-  @include _400 {
-    height: 50px;
-  }
+  // @include _400 {
+  //   height: 50px;
+  // }
   @include flex(center);
   nav.navigation {
     @include flex(flex-end);
@@ -386,7 +386,6 @@ header {
 
 // second section
 .services {
-  // ma-height: 703px;
   background: #fff;
   position: relative;
   @include flex(flex-start, column);
@@ -416,7 +415,6 @@ header {
     }
   }
   .slogan__description {
-    // max-width: 730px;
     @include text;
     text-align: center;
     margin-bottom: 70px;
@@ -610,69 +608,307 @@ header {
 }
 // third section
 .about-us {
-  height: 797px;
-  background: #f6f6f8;
   position: relative;
   @include flex(flex-start, column);
+  &::before {
+    content: "";
+    background: #f6f6f8;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
   .about-us__wrapper {
+    @include mainCol;
     @include flex(space-between);
-    width: 1110px;
-    height: 490px;
-    align-items: flex-start;
     border-bottom: 1px solid #e0e0e0;
     margin-top: 100px;
     margin-bottom: 70px;
+    @include _1280 {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 83px;
+      margin-bottom: 58px;
+    }
+    @include _1024 {
+      margin-top: 67px;
+      margin-bottom: 47px;
+    }
+    @include _768 {
+      margin-top: 50px;
+      margin-bottom: 35px;
+    }
+    @include _400 {
+      margin-top: 33px;
+      margin-bottom: 23px;
+    }
     .about-us__info {
-      width: 489px;
-      max-height: 400px;
-      margin-top: 52px;
-      .about-us__slogan {
-        @include slogan();
-        margin-bottom: 40px;
+      margin-right: 121px;
+      @include _1280 {
+        width: calc(100% - 40px);
+        margin-right: 0;
       }
+      .about-us__slogan {
+        @include slogan;
+        margin-bottom: 40px;
+        @include _1280 {
+          margin-bottom: 33px;
+        }
+        @include _1024 {
+          margin-bottom: 27px;
+        }
+        @include _768 {
+          margin-bottom: 20px;
+        }
+        @include _400 {
+          margin-bottom: 13px;
+        }
+      }
+
       .about-us__text {
-        @include text();
-        overflow: hidden;
-        max-height: 117px;
+        @include text;
         margin-bottom: 30px;
+        @include _1280 {
+          margin-bottom: 25px;
+        }
+        @include _1024 {
+          margin-bottom: 20px;
+        }
+        @include _768 {
+          margin-bottom: 15px;
+        }
+        @include _400 {
+          margin-bottom: 10px;
+        }
       }
       .about-us__more {
-        font-size: $fs;
-        line-height: $fs * 1.25;
-        font-weight: 500;
-        color: $primery;
-        text-decoration: underline;
+        margin-bottom: 90px;
+        @include _1280 {
+          margin-bottom: 75px;
+        }
+        @include _1024 {
+          margin-bottom: 60px;
+        }
+        @include _768 {
+          margin-bottom: 45px;
+        }
+        @include _400 {
+          margin-bottom: 30px;
+        }
+        .about-us__more-link {
+          font-size: $fs;
+          line-height: $fs * 1.25;
+          font-weight: 500;
+          color: $primery;
+          text-decoration: underline;
+          @include _1280 {
+            font-size: $fs - 1px;
+            line-height: $fs + 2px;
+          }
+          @include _1024 {
+            font-size: $fs - 4px;
+            line-height: $fs - 2px;
+          }
+          @include _768 {
+            font-size: $fs - 7px;
+            line-height: $fs - 5px;
+          }
+          @include _640 {
+            font-size: $fs - 9px;
+            line-height: $fs - 7px;
+          }
+          @include _400 {
+            font-size: $fs / 3;
+            line-height: $fs - 8px;
+          }
+        }
+      }
+    }
+    .about-us__image {
+      margin-bottom: 90px;
+      @include _1280 {
+        width: 400px;
+        height: 320px;
+        margin-bottom: 20px;
+        order: -1;
+      }
+      @include _1024 {
+        width: 300px;
+        height: 240px;
+        margin-bottom: 20px;
+        order: -1;
+      }
+      @include _768 {
+        width: 200px;
+        height: 160px;
+        margin-bottom: 20px;
+        order: -1;
+      }
+      @include _640 {
+        width: 100px;
+        height: 80px;
+        margin-bottom: 20px;
+        order: -1;
       }
     }
   }
-  .about-us__projects-list {
-    @include flex();
-    .projects__item {
-      position: relative;
-      width: 104px;
-      height: 67px;
-      margin-right: 100px;
-      margin-bottom: 70px;
-      &:last-child {
-        margin-right: 0;
+  .projects-wrapper {
+    @include mainCol;
+    @include flex(center);
+    .about-us__projects-list {
+      @include flex(space-between);
+      flex-wrap: wrap;
+      width: 920px;
+      @include _1280 {
+        width: 622px;
       }
-      .item__info {
-        font-size: $fs * 2.25;
-        padding-left: 50px;
-        &::before {
-          content: "";
-          position: absolute;
-          background-image: url(./images/projects-item__image.png);
-          width: 30px;
-          height: 30px;
-          left: 0;
-          top: 8.8px;
+      @include _1024 {
+        width: 498px;
+      }
+      @include _768 {
+        width: 374px;
+      }
+      @include _640 {
+        width: 317px;
+      }
+      @include _400 {
+        width: 250px;
+      }
+      .projects__item {
+        position: relative;
+        width: calc(100% / 5 + 20px);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+        @media screen and (min-width: 1281px) {
+          &:nth-child(5n) {
+            width: 104px;
+          }
         }
-      }
-      .item__slogan {
-        font-size: $fs;
-        line-height: $fs + 9;
-        color: $grey;
+        @include _1280 {
+          width: calc(100% / 4 + 20px);
+          &:nth-child(4n) {
+            width: 94px;
+          }
+          margin-bottom: 58px;
+        }
+        @media screen and (min-width: 769px) {
+        }
+        @include _1024 {
+          width: calc(100% / 3 + 20px);
+          &:nth-child(3n) {
+            width: 84px;
+          }
+          &:nth-child(4n) {
+            width: calc(100% / 3 + 20px);
+          }
+          margin-bottom: 47px;
+        }
+        @include _768 {
+          width: calc(100% / 3 + 20px);
+          &:nth-child(3n) {
+            width: 64px;
+          }
+
+          margin-bottom: 35px;
+        }
+        @include _400 {
+          width: calc(100% / 2);
+          &:nth-child(2n) {
+            width: 44px;
+          }
+          &:nth-child(3n) {
+            width: calc(100% / 2);
+          }
+          &:nth-child(6n) {
+            width: 44px;
+          }
+          margin-bottom: 35px;
+        }
+        .item__info {
+          font-size: $fs * 2.25;
+          padding-left: 50px;
+          &::before {
+            content: "";
+            position: absolute;
+            background-image: url(./images/projects-item__image.png);
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            left: 0;
+            top: 9px;
+            @include _1280 {
+              background-size: 28px;
+              width: 28px;
+              height: 28px;
+              top: 8px;
+            }
+            @include _1024 {
+              width: 22px;
+              height: 22px;
+              background-size: 22px;
+              top: 6px;
+            }
+            @include _768 {
+              width: 16px;
+              height: 16px;
+              background-size: 16px;
+              top: 4px;
+            }
+            @include _640 {
+              width: 13px;
+              height: 13px;
+              background-size: 13px;
+              top: 3px;
+            }
+            @include _400 {
+              width: 10px;
+              height: 10px;
+              background-size: 10px;
+              top: 1;
+            }
+          }
+          @include _1280 {
+            font-size: 34px;
+            padding-left: 45px;
+          }
+          @include _1024 {
+            font-size: 27px;
+            padding-left: 35px;
+          }
+          @include _768 {
+            font-size: 20px;
+            padding-left: 26px;
+          }
+          @include _640 {
+            font-size: 16px;
+            padding-left: 20px;
+          }
+          @include _400 {
+            font-size: 12px;
+            padding-left: 15px;
+          }
+        }
+        .item__slogan {
+          @include text();
+          // font-size: $fs;
+          // font-weight: 400;
+          // line-height: $fs + 9;
+          // color: $grey;
+          // @include _1280 {
+          //   font-size: $fs - 1px;
+          //   line-height: $fs + 7px;
+          // }
+          // @include _1024 {
+          //   font-size: $fs - 4px;
+          //   line-height: $fs + 2.75px;
+          // }
+          // @include _768 {
+          //   font-size: $fs - 7px;
+          //   line-height: $fs - 2px;
+          // }
+        }
       }
     }
   }
