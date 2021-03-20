@@ -10,10 +10,10 @@ ul,
 a {
   margin: 0;
 }
-main {
-  overflow-x: hidden;
-  width: 100vw;
-}
+// main {
+//   overflow-x: hidden;
+//   width: 100vw;
+// }
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -37,5 +37,11 @@ ul {
 *.empty-125 {
   @media screen and (max-width: 1280px) {
     margin-bottom: 0px !important;
+  }
+}
+.all-services-empty {
+  margin-bottom: 0 !important;
+  @media screen and (max-width: 1280px) {
+    display: none;
   }
 }

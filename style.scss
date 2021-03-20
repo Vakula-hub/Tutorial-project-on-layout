@@ -79,10 +79,10 @@ $baseAlign: center;
     font-size: $fs / 2;
     line-height: $fs - 6px;
   }
-  @include _400 {
-    font-size: $fs - 9px;
-    line-height: $fs - 7px;
-  }
+  // @include _400 {
+  //   font-size: $fs - 9px;
+  //   line-height: $fs - 7px;
+  // }
 }
 @mixin text {
   font-size: $fs;
@@ -102,13 +102,13 @@ $baseAlign: center;
     line-height: $fs - 2px;
   }
   @include _640 {
-    font-size: $fs - 9px;
+    font-size: $fs - 10px;
     line-height: $fs - 5px;
   }
-  @include _400 {
-    font-size: $fs / 3;
-    line-height: $fs - 8px;
-  }
+  // @include _400 {
+  //   font-size: $fs / 3;
+  //   line-height: $fs - 8px;
+  // }
 }
 @mixin button {
   font-weight: 500;
@@ -896,17 +896,31 @@ header {
 //fourth section
 .all-services {
   @include flex(center, column);
-  // min-height: 972px;
   position: relative;
   border-bottom: 1px solid #e0e0e0;
   &::before {
     content: "";
-    height: 50%;
+    height: 490px;
     width: 100%;
     background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
     position: absolute;
     top: 0;
     z-index: -1;
+    @include _1280() {
+      height: 420px;
+    }
+    @include _1024() {
+      height: 345px;
+    }
+    @include _768() {
+      height: 265px;
+    }
+    @include _640() {
+      height: 235px;
+    }
+    @include _400 {
+      height: 230px;
+    }
   }
   .all-services__main {
     @include mainCol();
@@ -914,26 +928,119 @@ header {
     position: relative;
     margin-top: 84px;
     margin-bottom: 70px;
+    @include _1280() {
+      margin-top: 70px;
+      margin-bottom: 58px;
+    }
+    @include _1024() {
+      margin-top: 56px;
+      margin-bottom: 47px;
+    }
+    @include _768() {
+      margin-top: 42px;
+      margin-bottom: 35px;
+    }
+    @include _400() {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 28px;
+      margin-bottom: 23px;
+    }
     .all-services__slogan {
       @include slogan();
       width: 540px;
       color: $white;
+      @include _1280() {
+        width: 435px;
+      }
+      @include _1024() {
+        width: 390px;
+      }
+      @include _768() {
+        width: 285px;
+      }
+      @include _640() {
+        width: 240px;
+      }
+      @include _400() {
+        width: 195px;
+        margin-bottom: 10px;
+      }
     }
     .all-services__more {
       @include button();
     }
   }
-  .all-srvices__list {
+  .all-services__list {
     @include mainCol();
     @include flex(space-between);
     margin-bottom: 85px;
     flex-wrap: wrap;
     border-bottom: 1px solid #e0e0e0;
+    @include _1280() {
+      margin-bottom: 71px;
+      justify-content: space-around;
+    }
+    @include _1024() {
+      margin-bottom: 57px;
+    }
+    @include _768() {
+      margin-bottom: 42px;
+    }
+    @include _400() {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
     .all-services__item {
-      width: calc(100% / 3 - 20px);
+      width: 350px;
       margin-bottom: 85px;
+      @media screen and (min-width: 1281px) {
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+      @include _1280() {
+        width: 310px;
+        margin-bottom: 71px;
+      }
+      @include _1024() {
+        width: 250px;
+        margin-bottom: 57px;
+      }
+      @include _768() {
+        width: 185px;
+        margin-bottom: 43px;
+      }
+      @include _640 {
+        width: 145px;
+        margin-bottom: 43px;
+      }
+      @include _400() {
+        margin-bottom: 28px;
+      }
       .all-services__image {
         margin-bottom: 30px;
+        @include _1280() {
+          width: 310px;
+          height: 265px;
+          margin-bottom: 20px;
+        }
+        @include _1024 {
+          width: 250px;
+          height: 214px;
+          margin-bottom: 16px;
+        }
+        @include _768() {
+          width: 185px;
+          height: 158px;
+          margin-bottom: 12px;
+        }
+        @include _640() {
+          width: 145px;
+          height: 125px;
+          margin-bottom: 10px;
+        }
       }
       .all-services__subtitle {
         @include smallSlogan();
@@ -941,10 +1048,34 @@ header {
         & span {
           color: $primery;
         }
+        @include _1280() {
+          margin-bottom: 25px;
+        }
+        @include _1024() {
+          margin-bottom: 20px;
+        }
+        @include _768() {
+          margin-bottom: 15px;
+        }
+        @include _400() {
+          margin-bottom: 10px;
+        }
       }
       .all-services__text {
         @include text();
         margin-bottom: 30px;
+        @include _1280() {
+          margin-bottom: 25px;
+        }
+        @include _1024() {
+          margin-bottom: 20px;
+        }
+        @include _768() {
+          margin-bottom: 15px;
+        }
+        @include _400() {
+          margin-bottom: 10px;
+        }
       }
       .item__more {
         font-size: $fs;
@@ -952,6 +1083,26 @@ header {
         font-weight: 500;
         color: $primery;
         text-decoration-line: underline;
+        @include _1280 {
+          font-size: $fs - 1px;
+          line-height: $fs + 2px;
+        }
+        @include _1024 {
+          font-size: $fs - 4px;
+          line-height: $fs - 2px;
+        }
+        @include _768 {
+          font-size: $fs - 7px;
+          line-height: $fs - 5px;
+        }
+        @include _640 {
+          font-size: $fs - 9px;
+          line-height: $fs - 7px;
+        }
+        @include _400 {
+          font-size: $fs / 3;
+          line-height: $fs - 8px;
+        }
       }
     }
   }
