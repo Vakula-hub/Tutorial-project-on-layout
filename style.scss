@@ -787,20 +787,21 @@ header {
           }
         }
         @include _1280 {
-          width: calc(100% / 4 + 20px);
-          &:nth-child(4n) {
+          width: calc(100% / 5);
+          &:nth-child(5n) {
             width: 94px;
+            // width: calc(100% / 4 + 20px);
+            // &:nth-child(4n) {
+            //   width: 94px;
           }
           margin-bottom: 58px;
-        }
-        @media screen and (min-width: 769px) {
         }
         @include _1024 {
           width: calc(100% / 3 + 20px);
           &:nth-child(3n) {
             width: 84px;
           }
-          &:nth-child(4n) {
+          &:nth-child(5n) {
             width: calc(100% / 3 + 20px);
           }
           margin-bottom: 47px;
@@ -814,16 +815,11 @@ header {
           margin-bottom: 35px;
         }
         @include _400 {
-          width: calc(100% / 2);
-          &:nth-child(2n) {
-            width: 44px;
-          }
+          width: calc(100% / 3 + 15px);
           &:nth-child(3n) {
-            width: calc(100% / 2);
-          }
-          &:nth-child(6n) {
             width: 44px;
           }
+
           margin-bottom: 35px;
         }
         .item__info {
@@ -892,22 +888,6 @@ header {
         }
         .item__slogan {
           @include text();
-          // font-size: $fs;
-          // font-weight: 400;
-          // line-height: $fs + 9;
-          // color: $grey;
-          // @include _1280 {
-          //   font-size: $fs - 1px;
-          //   line-height: $fs + 7px;
-          // }
-          // @include _1024 {
-          //   font-size: $fs - 4px;
-          //   line-height: $fs + 2.75px;
-          // }
-          // @include _768 {
-          //   font-size: $fs - 7px;
-          //   line-height: $fs - 2px;
-          // }
         }
       }
     }
@@ -916,12 +896,12 @@ header {
 //fourth section
 .all-services {
   @include flex(center, column);
-  min-height: 972px;
+  // min-height: 972px;
   position: relative;
   border-bottom: 1px solid #e0e0e0;
   &::before {
     content: "";
-    height: 490px;
+    height: 50%;
     width: 100%;
     background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
     position: absolute;
