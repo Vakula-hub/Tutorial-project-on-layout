@@ -893,6 +893,7 @@ header {
     }
   }
 }
+
 //fourth section
 .all-services {
   @include flex(center, column);
@@ -1107,9 +1108,10 @@ header {
     }
   }
 }
+
 // fifth section
 .all-projects {
-  min-height: 776px;
+  // min-height: 776px;
   position: relative;
   @include flex(flex-start, column);
   &::before {
@@ -1121,36 +1123,105 @@ header {
     top: 0;
     z-index: -1;
   }
-
   .all-projects__wrapper {
     @include mainCol();
     @include flex(center, column);
-    top: 0px;
+    // top: 0px;
     margin-top: 100px;
+    @include _1280() {
+      margin-top: 83px;
+    }
+    @include _1024() {
+      margin-top: 67px;
+    }
+    @include _768() {
+      margin-top: 50px;
+    }
+    @include _400() {
+      margin-top: 33px;
+    }
     .all-projects__slogan {
       @include slogan();
-      max-width: 350px;
+      // max-width: 350px;
       margin-bottom: 50px;
       color: #000000;
+      @include _1280() {
+        margin-bottom: 40px;
+      }
+      @include _1024() {
+        margin-bottom: 30px;
+      }
+      @include _768() {
+        margin-bottom: 25px;
+      }
+      @include _400() {
+        margin-bottom: 15px;
+      }
     }
     .all-projects__text {
       @include text();
       max-width: 730px;
       margin-bottom: 70px;
       text-align: center;
+      @include _1280() {
+        margin-bottom: 55px;
+      }
+      @include _1024() {
+        margin-bottom: 45px;
+      }
+      @include _768() {
+        margin-bottom: 35px;
+      }
+      @include _400() {
+        margin-bottom: 20px;
+      }
     }
     .all-projects__list {
       @include mainCol();
       @include flex(space-between);
       flex-wrap: wrap;
+      @include _1280() {
+        justify-content: space-around;
+      }
       .list__item {
-        width: calc(100% / 4 - 22.5px);
+        width: 255px;
+        height: 255px;
         margin-bottom: 50px;
+        overflow: hidden;
+
+        @include _1280() {
+          width: 212px;
+          height: 212px;
+          margin-bottom: 40px;
+        }
+        @include _1024() {
+          width: 170px;
+          height: 170px;
+          margin-bottom: 30px;
+        }
+        @include _768() {
+          margin-bottom: 25px;
+        }
+        @include _400() {
+          margin-bottom: 15px;
+        }
       }
     }
     .all-projects__more {
       @include button();
       margin-bottom: 130px;
+      @include _1280() {
+        margin-bottom: 105px;
+      }
+      @include _1024() {
+        margin-bottom: 85px;
+      }
+      @include _768() {
+        margin-bottom: 65px;
+      }
+      @include _400() {
+      }
+      margin-bottom: 45px;
     }
   }
 }

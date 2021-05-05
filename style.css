@@ -38,10 +38,10 @@ ul {
   }
 }
 
-@media screen and (max-width: 1280px) {
-  *.empty-125 {
-    margin-bottom: 0px !important;
-  }
+*.empty-125,
+*.empty {
+  height: 0 !important;
+  margin-bottom: 0px !important;
 }
 
 .all-services-empty {
@@ -200,7 +200,8 @@ header nav.navigation .nav-link:hover::after {
 
 .intro {
   max-height: 900px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/Rectangle.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/Rectangle.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1098,7 +1099,11 @@ header nav.navigation .nav-link:hover::after {
     margin-bottom: 30px;
   }
 }
-.about-us .about-us__wrapper .about-us__info .about-us__more .about-us__more-link {
+.about-us
+  .about-us__wrapper
+  .about-us__info
+  .about-us__more
+  .about-us__more-link {
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
@@ -1106,31 +1111,51 @@ header nav.navigation .nav-link:hover::after {
   text-decoration: underline;
 }
 @media screen and (max-width: 1280px) {
-  .about-us .about-us__wrapper .about-us__info .about-us__more .about-us__more-link {
+  .about-us
+    .about-us__wrapper
+    .about-us__info
+    .about-us__more
+    .about-us__more-link {
     font-size: 15px;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .about-us .about-us__wrapper .about-us__info .about-us__more .about-us__more-link {
+  .about-us
+    .about-us__wrapper
+    .about-us__info
+    .about-us__more
+    .about-us__more-link {
     font-size: 12px;
     line-height: 14px;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-us .about-us__wrapper .about-us__info .about-us__more .about-us__more-link {
+  .about-us
+    .about-us__wrapper
+    .about-us__info
+    .about-us__more
+    .about-us__more-link {
     font-size: 9px;
     line-height: 11px;
   }
 }
 @media screen and (max-width: 640px) {
-  .about-us .about-us__wrapper .about-us__info .about-us__more .about-us__more-link {
+  .about-us
+    .about-us__wrapper
+    .about-us__info
+    .about-us__more
+    .about-us__more-link {
     font-size: 7px;
     line-height: 9px;
   }
 }
 @media screen and (max-width: 400px) {
-  .about-us .about-us__wrapper .about-us__info .about-us__more .about-us__more-link {
+  .about-us
+    .about-us__wrapper
+    .about-us__info
+    .about-us__more
+    .about-us__more-link {
     font-size: 5.3333333333px;
     line-height: 8px;
   }
@@ -1244,7 +1269,10 @@ header nav.navigation .nav-link:hover::after {
   margin-bottom: 70px;
 }
 @media screen and (min-width: 1281px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item:nth-child(5n) {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item:nth-child(5n) {
     width: 104px;
   }
 }
@@ -1253,7 +1281,10 @@ header nav.navigation .nav-link:hover::after {
     width: calc(100% / 5);
     margin-bottom: 58px;
   }
-  .about-us .projects-wrapper .about-us__projects-list .projects__item:nth-child(5n) {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item:nth-child(5n) {
     width: 94px;
   }
 }
@@ -1262,10 +1293,16 @@ header nav.navigation .nav-link:hover::after {
     width: calc(100% / 3 + 20px);
     margin-bottom: 47px;
   }
-  .about-us .projects-wrapper .about-us__projects-list .projects__item:nth-child(3n) {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item:nth-child(3n) {
     width: 84px;
   }
-  .about-us .projects-wrapper .about-us__projects-list .projects__item:nth-child(5n) {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item:nth-child(5n) {
     width: calc(100% / 3 + 20px);
   }
 }
@@ -1274,7 +1311,10 @@ header nav.navigation .nav-link:hover::after {
     width: calc(100% / 3 + 20px);
     margin-bottom: 35px;
   }
-  .about-us .projects-wrapper .about-us__projects-list .projects__item:nth-child(3n) {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item:nth-child(3n) {
     width: 64px;
   }
 }
@@ -1283,15 +1323,26 @@ header nav.navigation .nav-link:hover::after {
     width: calc(100% / 3 + 15px);
     margin-bottom: 35px;
   }
-  .about-us .projects-wrapper .about-us__projects-list .projects__item:nth-child(3n) {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item:nth-child(3n) {
     width: 44px;
   }
 }
-.about-us .projects-wrapper .about-us__projects-list .projects__item .item__info {
+.about-us
+  .projects-wrapper
+  .about-us__projects-list
+  .projects__item
+  .item__info {
   font-size: 36px;
   padding-left: 50px;
 }
-.about-us .projects-wrapper .about-us__projects-list .projects__item .item__info::before {
+.about-us
+  .projects-wrapper
+  .about-us__projects-list
+  .projects__item
+  .item__info::before {
   content: "";
   position: absolute;
   background-image: url(./images/projects-item__image.png);
@@ -1302,7 +1353,11 @@ header nav.navigation .nav-link:hover::after {
   top: 9px;
 }
 @media screen and (max-width: 1280px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info::before {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info::before {
     background-size: 28px;
     width: 28px;
     height: 28px;
@@ -1310,7 +1365,11 @@ header nav.navigation .nav-link:hover::after {
   }
 }
 @media screen and (max-width: 1024px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info::before {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info::before {
     width: 22px;
     height: 22px;
     background-size: 22px;
@@ -1318,7 +1377,11 @@ header nav.navigation .nav-link:hover::after {
   }
 }
 @media screen and (max-width: 768px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info::before {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info::before {
     width: 16px;
     height: 16px;
     background-size: 16px;
@@ -1326,7 +1389,11 @@ header nav.navigation .nav-link:hover::after {
   }
 }
 @media screen and (max-width: 640px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info::before {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info::before {
     width: 13px;
     height: 13px;
     background-size: 13px;
@@ -1334,7 +1401,11 @@ header nav.navigation .nav-link:hover::after {
   }
 }
 @media screen and (max-width: 400px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info::before {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info::before {
     width: 10px;
     height: 10px;
     background-size: 10px;
@@ -1342,61 +1413,101 @@ header nav.navigation .nav-link:hover::after {
   }
 }
 @media screen and (max-width: 1280px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info {
     font-size: 34px;
     padding-left: 45px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info {
     font-size: 27px;
     padding-left: 35px;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info {
     font-size: 20px;
     padding-left: 26px;
   }
 }
 @media screen and (max-width: 640px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info {
     font-size: 16px;
     padding-left: 20px;
   }
 }
 @media screen and (max-width: 400px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__info {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__info {
     font-size: 12px;
     padding-left: 15px;
   }
 }
-.about-us .projects-wrapper .about-us__projects-list .projects__item .item__slogan {
+.about-us
+  .projects-wrapper
+  .about-us__projects-list
+  .projects__item
+  .item__slogan {
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   color: #999999;
 }
 @media screen and (max-width: 1280px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__slogan {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__slogan {
     font-size: 15px;
     line-height: 23px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__slogan {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__slogan {
     font-size: 12px;
     line-height: 18.75px;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__slogan {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__slogan {
     font-size: 9px;
     line-height: 14px;
   }
 }
 @media screen and (max-width: 640px) {
-  .about-us .projects-wrapper .about-us__projects-list .projects__item .item__slogan {
+  .about-us
+    .projects-wrapper
+    .about-us__projects-list
+    .projects__item
+    .item__slogan {
     font-size: 6px;
     line-height: 11px;
   }
@@ -1754,49 +1865,77 @@ header nav.navigation .nav-link:hover::after {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1280px) {
-  .all-services .all-services__list .all-services__item .all-services__subtitle {
+  .all-services
+    .all-services__list
+    .all-services__item
+    .all-services__subtitle {
     font-size: 15px;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .all-services .all-services__list .all-services__item .all-services__subtitle {
+  .all-services
+    .all-services__list
+    .all-services__item
+    .all-services__subtitle {
     font-size: 13px;
     line-height: 16px;
   }
 }
 @media screen and (max-width: 768px) {
-  .all-services .all-services__list .all-services__item .all-services__subtitle {
+  .all-services
+    .all-services__list
+    .all-services__item
+    .all-services__subtitle {
     font-size: 10px;
     line-height: 12px;
   }
 }
 @media screen and (max-width: 640px) {
-  .all-services .all-services__list .all-services__item .all-services__subtitle {
+  .all-services
+    .all-services__list
+    .all-services__item
+    .all-services__subtitle {
     font-size: 8px;
     line-height: 10px;
   }
 }
-.all-services .all-services__list .all-services__item .all-services__subtitle span {
+.all-services
+  .all-services__list
+  .all-services__item
+  .all-services__subtitle
+  span {
   color: #4985ff;
 }
 @media screen and (max-width: 1280px) {
-  .all-services .all-services__list .all-services__item .all-services__subtitle {
+  .all-services
+    .all-services__list
+    .all-services__item
+    .all-services__subtitle {
     margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .all-services .all-services__list .all-services__item .all-services__subtitle {
+  .all-services
+    .all-services__list
+    .all-services__item
+    .all-services__subtitle {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 768px) {
-  .all-services .all-services__list .all-services__item .all-services__subtitle {
+  .all-services
+    .all-services__list
+    .all-services__item
+    .all-services__subtitle {
     margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 400px) {
-  .all-services .all-services__list .all-services__item .all-services__subtitle {
+  .all-services
+    .all-services__list
+    .all-services__item
+    .all-services__subtitle {
     margin-bottom: 10px;
   }
 }
@@ -1890,7 +2029,6 @@ header nav.navigation .nav-link:hover::after {
 }
 
 .all-projects {
-  min-height: 776px;
   position: relative;
   display: flex;
   align-items: center;
@@ -1913,7 +2051,6 @@ header nav.navigation .nav-link:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  top: 0px;
   margin-top: 100px;
 }
 @media screen and (max-width: 1280px) {
@@ -1941,12 +2078,31 @@ header nav.navigation .nav-link:hover::after {
     width: 300px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .all-projects .all-projects__wrapper {
+    margin-top: 83px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .all-projects .all-projects__wrapper {
+    margin-top: 67px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-projects .all-projects__wrapper {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .all-projects .all-projects__wrapper {
+    margin-top: 33px;
+  }
+}
 .all-projects .all-projects__wrapper .all-projects__slogan {
   font-size: 36px;
   font-weight: 700;
   line-height: 53px;
   color: #323232;
-  max-width: 350px;
   margin-bottom: 50px;
   color: #000000;
 }
@@ -1980,6 +2136,26 @@ header nav.navigation .nav-link:hover::after {
     line-height: 27px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .all-projects .all-projects__wrapper .all-projects__slogan {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .all-projects .all-projects__wrapper .all-projects__slogan {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-projects .all-projects__wrapper .all-projects__slogan {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .all-projects .all-projects__wrapper .all-projects__slogan {
+    margin-bottom: 15px;
+  }
+}
 .all-projects .all-projects__wrapper .all-projects__text {
   font-size: 16px;
   font-weight: 400;
@@ -2011,6 +2187,26 @@ header nav.navigation .nav-link:hover::after {
   .all-projects .all-projects__wrapper .all-projects__text {
     font-size: 6px;
     line-height: 11px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .all-projects .all-projects__wrapper .all-projects__text {
+    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .all-projects .all-projects__wrapper .all-projects__text {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-projects .all-projects__wrapper .all-projects__text {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .all-projects .all-projects__wrapper .all-projects__text {
+    margin-bottom: 20px;
   }
 }
 .all-projects .all-projects__wrapper .all-projects__list {
@@ -2047,9 +2243,40 @@ header nav.navigation .nav-link:hover::after {
     width: 300px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .all-projects .all-projects__wrapper .all-projects__list {
+    justify-content: space-around;
+  }
+}
 .all-projects .all-projects__wrapper .all-projects__list .list__item {
-  width: calc(100% / 4 - 22.5px);
+  width: 255px;
+  height: 255px;
   margin-bottom: 50px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1280px) {
+  .all-projects .all-projects__wrapper .all-projects__list .list__item {
+    width: 212px;
+    height: 212px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .all-projects .all-projects__wrapper .all-projects__list .list__item {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-projects .all-projects__wrapper .all-projects__list .list__item {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .all-projects .all-projects__wrapper .all-projects__list .list__item {
+    margin-bottom: 15px;
+  }
 }
 .all-projects .all-projects__wrapper .all-projects__more {
   font-weight: 500;
@@ -2100,6 +2327,26 @@ header nav.navigation .nav-link:hover::after {
     padding: 5px 10px 5px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .all-projects .all-projects__wrapper .all-projects__more {
+    margin-bottom: 105px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .all-projects .all-projects__wrapper .all-projects__more {
+    margin-bottom: 85px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-projects .all-projects__wrapper .all-projects__more {
+    margin-bottom: 65px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .all-projects .all-projects__wrapper .all-projects__more {
+    margin-bottom: 45px;
+  }
+}
 
 .video {
   display: flex;
@@ -2114,7 +2361,12 @@ header nav.navigation .nav-link:hover::after {
   position: absolute;
   height: 570px;
   width: 100%;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(./images/video__background.png);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url(./images/video__background.png);
   background-repeat: round;
   top: 0;
   z-index: -1;
@@ -2396,7 +2648,7 @@ header nav.navigation .nav-link:hover::after {
   justify-content: flex-start;
   flex-direction: row;
 }
-.video .subscribe .subscribe__form input[type=email] {
+.video .subscribe .subscribe__form input[type="email"] {
   width: 299px;
   height: 45px;
   font-size: 13px;

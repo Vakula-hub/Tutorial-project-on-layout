@@ -34,11 +34,12 @@ ul {
     display: none;
   }
 }
-*.empty-125 {
-  @media screen and (max-width: 1280px) {
-    margin-bottom: 0px !important;
-  }
+*.empty-125,
+*.empty {
+  height: 0 !important;
+  margin-bottom: 0px !important;
 }
+
 .all-services-empty {
   margin-bottom: 0 !important;
   @media screen and (max-width: 1280px) {
