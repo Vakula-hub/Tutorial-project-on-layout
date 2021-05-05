@@ -790,9 +790,6 @@ header {
           width: calc(100% / 5);
           &:nth-child(5n) {
             width: 94px;
-            // width: calc(100% / 4 + 20px);
-            // &:nth-child(4n) {
-            //   width: 94px;
           }
           margin-bottom: 58px;
         }
@@ -1229,7 +1226,7 @@ header {
 // sixth section
 .video {
   @include flex(flex-start, column);
-  height: 1110px;
+  // height: 1110px;
   position: relative;
   &::before {
     content: "";
@@ -1242,9 +1239,21 @@ header {
         rgba(255, 255, 255, 0.15)
       ),
       url(./images/video__background.png);
-    background-repeat: round;
+    background-size: cover;
     top: 0;
     z-index: -1;
+    @include _1280() {
+      height: 475px;
+    }
+    @include _1024() {
+      height: 380px;
+    }
+    @include _768() {
+      height: 285px;
+    }
+    @include _400() {
+      height: 190px;
+    }
   }
   .video__wrapper {
     @include mainCol();
@@ -1252,16 +1261,56 @@ header {
     border-bottom: 1px solid #e0e0e0;
     margin-top: 70px;
     margin-bottom: 85px;
+    @include _1280() {
+      margin-top: 55px;
+      margin-bottom: 70px;
+    }
+    @include _1024() {
+      margin-top: 45px;
+      margin-bottom: 55px;
+    }
+    @include _768() {
+      margin-top: 35px;
+      margin-bottom: 40px;
+    }
+    @include _400() {
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
   }
   .video__slogan {
     @include slogan();
     color: $white;
     margin-bottom: 30px;
+    @include _1280() {
+      margin-bottom: 25px;
+    }
+    @include _1024() {
+      margin-bottom: 20px;
+    }
+    @include _768() {
+      margin-bottom: 15px;
+    }
+    @include _400() {
+      margin-bottom: 10px;
+    }
   }
   .video__text {
     @include text();
     color: $white;
     margin-bottom: 50px;
+    @include _1280() {
+      margin-bottom: 40px;
+    }
+    @include _1024() {
+      margin-bottom: 30px;
+    }
+    @include _768() {
+      margin-bottom: 25px;
+    }
+    @include _400() {
+      margin-bottom: 15px;
+    }
   }
   .video__content {
     position: relative;
@@ -1271,6 +1320,29 @@ header {
     background-size: cover;
     border-radius: 10px;
     margin-bottom: 85px;
+    @include _1280() {
+      width: 805px;
+      height: 355px;
+      margin-bottom: 70px;
+    }
+    @include _1024() {
+      width: 645px;
+      height: 285px;
+      margin-bottom: 55px;
+    }
+    @include _768() {
+      width: 450px;
+      height: 215px;
+      margin-bottom: 40px;
+    }
+    @include _640() {
+      width: 360px;
+    }
+    @include _400() {
+      width: 325px;
+      height: 140px;
+      margin-bottom: 25px;
+    }
     .video__button {
       position: relative;
       @include text();
@@ -1283,22 +1355,75 @@ header {
       background: transparent;
       border: 1px solid #ffffff;
       border-radius: 200px;
-      padding: 41px 29px 40px 121px;
+      padding: 40px 30px 40px 120px;
+      @include _1280() {
+        width: 250px;
+        height: 80px;
+        top: calc(50% - 30px);
+        left: calc(50% - 125px);
+        padding: 30px 20px 30px 95px;
+      }
+      @include _1024() {
+        width: 200px;
+        height: 65px;
+        top: calc(50% - 25px);
+        left: calc(50% - 100px);
+        padding: 25px 15px 25px 75px;
+      }
+      @include _768() {
+        width: 150px;
+        height: 50px;
+        top: calc(50% - 20px);
+        left: calc(50% - 75px);
+        padding: 20px 10px 20px 55px;
+      }
+      @include _400() {
+        width: 100px;
+        height: 30px;
+        top: calc(50% - 10px);
+        left: calc(50% - 50px);
+        padding: 10px 5px 10px 35px;
+      }
       &::before {
         content: "";
         background-image: url(./images/video__play-button.png);
+        background-size: cover;
         width: 60px;
         height: 60px;
         position: absolute;
         top: 20px;
         left: 40px;
+        @include _1280() {
+          width: 50px;
+          height: 50px;
+          top: 17px;
+          left: 33px;
+        }
+        @include _1024() {
+          width: 40px;
+          height: 40px;
+          top: 13px;
+          left: 27px;
+        }
+        @include _768() {
+          width: 30px;
+          height: 30px;
+          top: 10px;
+          left: 20px;
+        }
+        @include _400() {
+          width: 20px;
+          height: 20px;
+          top: 3px;
+          left: 13px;
+        }
       }
     }
   }
   .subscribe {
     @include mainCol();
     @include flex(flex-start, column);
-    height: 177px;
+    // height: 177px;
     .subscribe__slogan {
       @include smallSlogan();
       margin-bottom: 20px;
