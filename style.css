@@ -353,7 +353,7 @@ header nav.navigation .nav-link:hover::after {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-  padding: 15px 36px 15px;
+  padding: 12px 36px;
   text-align: center;
   max-width: 200px;
   background: #4985ff;
@@ -365,36 +365,36 @@ header nav.navigation .nav-link:hover::after {
 @media screen and (max-width: 1280px) {
   .intro .intro__wrapper .intro__button {
     font-size: 15px;
-    line-height: 17px;
-    padding: 13px 25px 13px;
+    line-height: 18px;
+    padding: 8px 25px;
   }
 }
 @media screen and (max-width: 1024px) {
   .intro .intro__wrapper .intro__button {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
-    padding: 11px 20px 11px;
+    padding: 6px 20px 7px;
   }
 }
 @media screen and (max-width: 768px) {
   .intro .intro__wrapper .intro__button {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
-    padding: 9px 20px 9px;
+    padding: 5px 20px;
   }
 }
 @media screen and (max-width: 640px) {
   .intro .intro__wrapper .intro__button {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 12px;
-    padding: 7px 15px 7px;
+    padding: 6px 15px;
   }
 }
 @media screen and (max-width: 400px) {
   .intro .intro__wrapper .intro__button {
     font-size: 8px;
     line-height: 10px;
-    padding: 5px 10px 5px;
+    padding: 2px 10px 2px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -626,19 +626,19 @@ header nav.navigation .nav-link:hover::after {
 }
 @media screen and (max-width: 1024px) {
   .services .services__list .services__item .services__subtitle {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 16px;
   }
 }
 @media screen and (max-width: 768px) {
   .services .services__list .services__item .services__subtitle {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
   }
 }
 @media screen and (max-width: 640px) {
   .services .services__list .services__item .services__subtitle {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 10px;
   }
 }
@@ -815,7 +815,7 @@ header nav.navigation .nav-link:hover::after {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-  padding: 15px 36px 15px;
+  padding: 12px 36px;
   text-align: center;
   max-width: 200px;
   background: #4985ff;
@@ -827,36 +827,36 @@ header nav.navigation .nav-link:hover::after {
 @media screen and (max-width: 1280px) {
   .services .services__button {
     font-size: 15px;
-    line-height: 17px;
-    padding: 13px 25px 13px;
+    line-height: 18px;
+    padding: 8px 25px;
   }
 }
 @media screen and (max-width: 1024px) {
   .services .services__button {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
-    padding: 11px 20px 11px;
+    padding: 6px 20px 7px;
   }
 }
 @media screen and (max-width: 768px) {
   .services .services__button {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
-    padding: 9px 20px 9px;
+    padding: 5px 20px;
   }
 }
 @media screen and (max-width: 640px) {
   .services .services__button {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 12px;
-    padding: 7px 15px 7px;
+    padding: 6px 15px;
   }
 }
 @media screen and (max-width: 400px) {
   .services .services__button {
     font-size: 8px;
     line-height: 10px;
-    padding: 5px 10px 5px;
+    padding: 2px 10px 2px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -1575,7 +1575,7 @@ header nav.navigation .nav-link:hover::after {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-  padding: 15px 36px 15px;
+  padding: 12px 36px;
   text-align: center;
   max-width: 200px;
   background: #4985ff;
@@ -1586,36 +1586,36 @@ header nav.navigation .nav-link:hover::after {
 @media screen and (max-width: 1280px) {
   .all-services .all-services__main .all-services__more {
     font-size: 15px;
-    line-height: 17px;
-    padding: 13px 25px 13px;
+    line-height: 18px;
+    padding: 8px 25px;
   }
 }
 @media screen and (max-width: 1024px) {
   .all-services .all-services__main .all-services__more {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
-    padding: 11px 20px 11px;
+    padding: 6px 20px 7px;
   }
 }
 @media screen and (max-width: 768px) {
   .all-services .all-services__main .all-services__more {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
-    padding: 9px 20px 9px;
+    padding: 5px 20px;
   }
 }
 @media screen and (max-width: 640px) {
   .all-services .all-services__main .all-services__more {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 12px;
-    padding: 7px 15px 7px;
+    padding: 6px 15px;
   }
 }
 @media screen and (max-width: 400px) {
   .all-services .all-services__main .all-services__more {
     font-size: 8px;
     line-height: 10px;
-    padding: 5px 10px 5px;
+    padding: 2px 10px 2px;
   }
 }
 .all-services .all-services__list {
@@ -1761,19 +1761,19 @@ header nav.navigation .nav-link:hover::after {
 }
 @media screen and (max-width: 1024px) {
   .all-services .all-services__list .all-services__item .all-services__subtitle {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 16px;
   }
 }
 @media screen and (max-width: 768px) {
   .all-services .all-services__list .all-services__item .all-services__subtitle {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
   }
 }
 @media screen and (max-width: 640px) {
   .all-services .all-services__list .all-services__item .all-services__subtitle {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 10px;
   }
 }
@@ -2144,7 +2144,7 @@ header nav.navigation .nav-link:hover::after {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-  padding: 15px 36px 15px;
+  padding: 12px 36px;
   text-align: center;
   max-width: 200px;
   background: #4985ff;
@@ -2157,36 +2157,36 @@ header nav.navigation .nav-link:hover::after {
 @media screen and (max-width: 1280px) {
   .all-projects .all-projects__wrapper .all-projects__more {
     font-size: 15px;
-    line-height: 17px;
-    padding: 13px 25px 13px;
+    line-height: 18px;
+    padding: 8px 25px;
   }
 }
 @media screen and (max-width: 1024px) {
   .all-projects .all-projects__wrapper .all-projects__more {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
-    padding: 11px 20px 11px;
+    padding: 6px 20px 7px;
   }
 }
 @media screen and (max-width: 768px) {
   .all-projects .all-projects__wrapper .all-projects__more {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
-    padding: 9px 20px 9px;
+    padding: 5px 20px;
   }
 }
 @media screen and (max-width: 640px) {
   .all-projects .all-projects__wrapper .all-projects__more {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 12px;
-    padding: 7px 15px 7px;
+    padding: 6px 15px;
   }
 }
 @media screen and (max-width: 400px) {
   .all-projects .all-projects__wrapper .all-projects__more {
     font-size: 8px;
     line-height: 10px;
-    padding: 5px 10px 5px;
+    padding: 2px 10px 2px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -2620,20 +2620,40 @@ header nav.navigation .nav-link:hover::after {
 }
 @media screen and (max-width: 1024px) {
   .video .subscribe .subscribe__slogan {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 16px;
   }
 }
 @media screen and (max-width: 768px) {
   .video .subscribe .subscribe__slogan {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
   }
 }
 @media screen and (max-width: 640px) {
   .video .subscribe .subscribe__slogan {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 10px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .video .subscribe .subscribe__slogan {
+    margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .video .subscribe .subscribe__slogan {
+    margin-bottom: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video .subscribe .subscribe__slogan {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .video .subscribe .subscribe__slogan {
+    margin-bottom: 7px;
   }
 }
 .video .subscribe .subscribe__text {
@@ -2667,8 +2687,48 @@ header nav.navigation .nav-link:hover::after {
     line-height: 11px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .video .subscribe .subscribe__text {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .video .subscribe .subscribe__text {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video .subscribe .subscribe__text {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .video .subscribe .subscribe__text {
+    margin-bottom: 10px;
+  }
+}
 .video .subscribe .subscribe__form {
   margin-bottom: 35px;
+}
+@media screen and (max-width: 1280px) {
+  .video .subscribe .subscribe__form {
+    margin-bottom: 29px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .video .subscribe .subscribe__form {
+    margin-bottom: 23px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video .subscribe .subscribe__form {
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .video .subscribe .subscribe__form {
+    margin-bottom: 12px;
+  }
 }
 .video .subscribe .subscribe__statement {
   font-size: 13px;
@@ -2677,6 +2737,36 @@ header nav.navigation .nav-link:hover::after {
   color: #999999;
   margin-bottom: 85px;
 }
+@media screen and (max-width: 1280px) {
+  .video .subscribe .subscribe__statement {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .video .subscribe .subscribe__statement {
+    font-size: 12px;
+    line-height: 18.75px;
+    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video .subscribe .subscribe__statement {
+    font-size: 9px;
+    line-height: 14px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .video .subscribe .subscribe__statement {
+    font-size: 6px;
+    line-height: 11px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .video .subscribe .subscribe__statement {
+    margin-bottom: 25px;
+  }
+}
 .video .subscribe .subscribe__form {
   display: flex;
   align-items: center;
@@ -2684,17 +2774,55 @@ header nav.navigation .nav-link:hover::after {
   flex-direction: row;
 }
 .video .subscribe .subscribe__form input[type=email] {
-  width: 299px;
+  width: 300px;
   height: 45px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 20px;
   color: #999999;
   border: 1px solid #f2f2f2;
   box-sizing: border-box;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px 0px 0px 30px;
-  padding: 15px 175px 13px 33px;
+  padding: 15px 175px 15px 35px;
+}
+@media screen and (max-width: 1280px) {
+  .video .subscribe .subscribe__form input[type=email] {
+    width: 250px;
+    height: 35px;
+    padding: 13px 0px 13px 29px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .video .subscribe .subscribe__form input[type=email] {
+    width: 220px;
+    height: 30px;
+    padding: 8px 0px 8px 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video .subscribe .subscribe__form input[type=email] {
+    width: 150px;
+    height: 25px;
+    padding: 4px 0px 4px 15px;
+    font-size: 9px;
+    line-height: 12px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .video .subscribe .subscribe__form input[type=email] {
+    font-size: 6px;
+    line-height: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .video .subscribe .subscribe__form input[type=email] {
+    width: 120px;
+    height: 15px;
+    padding: 2px 0px 2px 12px;
+  }
 }
 .video .subscribe .subscribe__form label {
   order: 1;
@@ -2704,7 +2832,7 @@ header nav.navigation .nav-link:hover::after {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-  padding: 15px 36px 15px;
+  padding: 12px 36px;
   text-align: center;
   max-width: 200px;
   background: #4985ff;
@@ -2718,36 +2846,60 @@ header nav.navigation .nav-link:hover::after {
 @media screen and (max-width: 1280px) {
   .video .subscribe .subscribe__form label button {
     font-size: 15px;
-    line-height: 17px;
-    padding: 13px 25px 13px;
+    line-height: 18px;
+    padding: 8px 25px;
   }
 }
 @media screen and (max-width: 1024px) {
   .video .subscribe .subscribe__form label button {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
-    padding: 11px 20px 11px;
+    padding: 6px 20px 7px;
   }
 }
 @media screen and (max-width: 768px) {
   .video .subscribe .subscribe__form label button {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
-    padding: 9px 20px 9px;
+    padding: 5px 20px;
   }
 }
 @media screen and (max-width: 640px) {
   .video .subscribe .subscribe__form label button {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 12px;
-    padding: 7px 15px 7px;
+    padding: 6px 15px;
   }
 }
 @media screen and (max-width: 400px) {
   .video .subscribe .subscribe__form label button {
     font-size: 8px;
     line-height: 10px;
-    padding: 5px 10px 5px;
+    padding: 2px 10px 2px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .video .subscribe .subscribe__form label button {
+    width: 160px;
+    padding-left: 22px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .video .subscribe .subscribe__form label button {
+    width: 127px;
+    padding-left: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video .subscribe .subscribe__form label button {
+    width: 120px;
+    padding-left: 13px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .video .subscribe .subscribe__form label button {
+    width: 80px;
+    padding-left: 9px;
   }
 }
 
@@ -2829,19 +2981,19 @@ footer .footer__wrapper > div > h3 {
 }
 @media screen and (max-width: 1024px) {
   footer .footer__wrapper > div > h3 {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 16px;
   }
 }
 @media screen and (max-width: 768px) {
   footer .footer__wrapper > div > h3 {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
   }
 }
 @media screen and (max-width: 640px) {
   footer .footer__wrapper > div > h3 {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 10px;
   }
 }

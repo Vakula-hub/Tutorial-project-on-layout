@@ -68,15 +68,15 @@ $baseAlign: center;
     line-height: $fs + 2px;
   }
   @include _1024 {
-    font-size: $fs - 3px;
+    font-size: $fs - 2px;
     line-height: $fs;
   }
   @include _768 {
-    font-size: $fs - 6px;
+    font-size: $fs - 4px;
     line-height: $fs - 4px;
   }
   @include _640 {
-    font-size: $fs / 2;
+    font-size: $fs - 6px;
     line-height: $fs - 6px;
   }
   // @include _400 {
@@ -115,7 +115,7 @@ $baseAlign: center;
   font-size: $fs;
   line-height: $fs * 1.25;
   color: $white;
-  padding: 15px 36px 15px;
+  padding: 12px 36px;
   text-align: center;
   max-width: 200px;
   background: $primery;
@@ -124,28 +124,28 @@ $baseAlign: center;
   border: none;
   @include _1280 {
     font-size: $fs - 1px;
-    line-height: $fs + 1px;
-    padding: 13px 25px 13px;
+    line-height: $fs + 2px;
+    padding: 8px 25px;
   }
   @include _1024 {
-    font-size: $fs - 2px;
+    font-size: $fs - 3px;
     line-height: $fs;
-    padding: 11px 20px 11px;
+    padding: 6px 20px 7px;
   }
   @include _768 {
-    font-size: $fs * 0.75;
+    font-size: $fs - 5px;
     line-height: $fs - 2px;
-    padding: 9px 20px 9px;
+    padding: 5px 20px;
   }
   @include _640 {
-    font-size: $fs - 6px;
+    font-size: $fs - 8px;
     line-height: $fs - 4px;
-    padding: 7px 15px 7px;
+    padding: 6px 15px;
   }
   @include _400 {
     font-size: $fs / 2;
     line-height: $fs - 6px;
-    padding: 5px 10px 5px;
+    padding: 2px 10px 2px;
   }
 }
 
@@ -191,9 +191,6 @@ header {
   @include _640 {
     height: 50px;
   }
-  // @include _400 {
-  //   height: 50px;
-  // }
   @include flex(center);
   nav.navigation {
     @include flex(flex-end);
@@ -1423,17 +1420,52 @@ header {
   .subscribe {
     @include mainCol();
     @include flex(flex-start, column);
-    // height: 177px;
     .subscribe__slogan {
       @include smallSlogan();
       margin-bottom: 20px;
+      @include _1280() {
+        margin-bottom: 17px;
+      }
+      @include _1024() {
+        margin-bottom: 13px;
+      }
+      @include _768() {
+        margin-bottom: 10px;
+      }
+      @include _400() {
+        margin-bottom: 7px;
+      }
     }
     .subscribe__text {
       @include text();
       margin-bottom: 30px;
+      @include _1280() {
+        margin-bottom: 25px;
+      }
+      @include _1024() {
+        margin-bottom: 20px;
+      }
+      @include _768() {
+        margin-bottom: 15px;
+      }
+      @include _400() {
+        margin-bottom: 10px;
+      }
     }
     .subscribe__form {
       margin-bottom: 35px;
+      @include _1280() {
+        margin-bottom: 29px;
+      }
+      @include _1024() {
+        margin-bottom: 23px;
+      }
+      @include _768() {
+        margin-bottom: 18px;
+      }
+      @include _400() {
+        margin-bottom: 12px;
+      }
     }
     .subscribe__statement {
       font-size: $fs - 3px;
@@ -1441,21 +1473,69 @@ header {
       line-height: $fs + 5px;
       color: $grey;
       margin-bottom: 85px;
+      @include _1280() {
+        margin-bottom: 70px;
+      }
+      @include _1024 {
+        font-size: $fs - 4px;
+        line-height: $fs + 2.75px;
+        margin-bottom: 55px;
+      }
+      @include _768 {
+        font-size: $fs - 7px;
+        line-height: $fs - 2px;
+        margin-bottom: 40px;
+      }
+      @include _640 {
+        font-size: $fs - 10px;
+        line-height: $fs - 5px;
+      }
+      @include _400() {
+        margin-bottom: 25px;
+      }
     }
     .subscribe__form {
       @include flex();
       input[type="email"] {
-        width: 299px;
+        width: 300px;
         height: 45px;
-        font-size: $fs - 3px;
+        font-size: $fs - 2px;
         font-weight: 400;
-        line-height: $fs + 5px;
+        line-height: $fs + 4px;
         color: $grey;
         border: 1px solid #f2f2f2;
         box-sizing: border-box;
         box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
         border-radius: 30px 0px 0px 30px;
-        padding: 15px 175px 13px 33px;
+        padding: 15px 175px 15px 35px;
+        @include _1280() {
+          width: 250px;
+          height: 35px;
+          padding: 13px 0px 13px 29px;
+        }
+        @include _1024 {
+          width: 220px;
+          height: 30px;
+          padding: 8px 0px 8px 20px;
+          font-size: $fs - 4px;
+          line-height: $fs + 4px;
+        }
+        @include _768 {
+          width: 150px;
+          height: 25px;
+          padding: 4px 0px 4px 15px;
+          font-size: $fs - 7px;
+          line-height: $fs - 4px;
+        }
+        @include _640 {
+          font-size: $fs - 10px;
+          line-height: $fs - 6px;
+        }
+        @include _400() {
+          width: 120px;
+          height: 15px;
+          padding: 2px 0px 2px 12px;
+        }
       }
       label {
         order: 1;
@@ -1465,6 +1545,22 @@ header {
           width: 190px;
           padding-left: 26px;
           border-radius: 0px 30px 30px 0px;
+          @include _1280() {
+            width: 160px;
+            padding-left: 22px;
+          }
+          @include _1024() {
+            width: 127px;
+            padding-left: 17px;
+          }
+          @include _768() {
+            width: 120px;
+            padding-left: 13px;
+          }
+          @include _400() {
+            width: 80px;
+            padding-left: 9px;
+          }
         }
       }
     }
