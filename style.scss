@@ -5,7 +5,6 @@ $white: #fff;
 $dark: #323232;
 $grey: #999999;
 $fs: 16px;
-$baseAlign: center;
 
 @mixin flex($justify: flex-start, $fd: row) {
   display: flex;
@@ -105,10 +104,6 @@ $baseAlign: center;
     font-size: $fs - 10px;
     line-height: $fs - 5px;
   }
-  // @include _400 {
-  //   font-size: $fs / 3;
-  //   line-height: $fs - 8px;
-  // }
 }
 @mixin button {
   font-weight: 500;
@@ -178,6 +173,7 @@ $baseAlign: center;
 
 // header
 header {
+  width: 100%;
   height: 100px;
   border-bottom: 1px solid #a1a1a150;
   position: relative;
@@ -423,10 +419,10 @@ header {
     }
   }
   .services__list {
-    @include flex(center);
+    @include flex(space-around);
     flex-wrap: wrap;
     .services__item {
-      width: calc(100% / 3 - 18px);
+      width: calc(100% / 3 - 24px);
       position: relative;
       margin-bottom: 55px;
       @include _1280 {
@@ -449,7 +445,7 @@ header {
         margin-bottom: 21px;
       }
       .services__subtitle {
-        width: 223px;
+        width: 226px;
         @include smallSlogan();
         margin-left: 130px;
         margin-top: 46px;
@@ -1105,7 +1101,6 @@ header {
 
 // fifth section
 .all-projects {
-  // min-height: 776px;
   position: relative;
   @include flex(flex-start, column);
   &::before {
@@ -1120,7 +1115,6 @@ header {
   .all-projects__wrapper {
     @include mainCol();
     @include flex(center, column);
-    // top: 0px;
     margin-top: 100px;
     @include _1280() {
       margin-top: 83px;
@@ -1136,7 +1130,6 @@ header {
     }
     .all-projects__slogan {
       @include slogan();
-      // max-width: 350px;
       margin-bottom: 50px;
       color: #000000;
       @include _1280() {
@@ -1223,7 +1216,6 @@ header {
 // sixth section
 .video {
   @include flex(flex-start, column);
-  // height: 1110px;
   position: relative;
   &::before {
     content: "";
@@ -1572,6 +1564,18 @@ footer {
   min-height: 413px;
   @include flex(flex-start, column);
   position: relative;
+  @include _1280() {
+    min-height: 340px;
+  }
+  @include _1024() {
+    min-height: 275px;
+  }
+  @include _768() {
+    min-height: 205px;
+  }
+  @include _400() {
+    min-height: 140px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -1589,56 +1593,161 @@ footer {
     margin-top: 70px;
     margin-bottom: 30px;
     border-bottom: 1px solid #e0e0e0;
-    > div {
-      width: 242px;
-      height: 235px;
-      margin-right: 43px;
-      &:last-of-type {
-        margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include _1280() {
+      margin-top: 55px;
+      margin-bottom: 25px;
+      justify-content: flex-end;
+    }
+    @include _1024() {
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+    @include _768() {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+    > li {
+      width: calc(100% / 4 - 33.75px);
+      margin-bottom: 70px;
+      @include _1280() {
+        width: calc(100% / 2 - 50px);
+        margin-bottom: 55px;
+      }
+      @include _1024() {
+        width: calc(100% / 2 - 30px);
+        margin-bottom: 45px;
+      }
+      @include _768() {
+        width: calc(100% / 2 - 20px);
+        margin-bottom: 0px;
+        ul {
+          clip: rect(0 0 0 0);
+          width: 0px;
+          height: 0px;
+          margin-left: -10000px;
+        }
+      }
+      @include _400() {
+        width: 60%;
+      }
+      &:hover ul {
+        clip: auto;
+        width: auto;
+        height: auto;
+        margin: auto;
       }
       > h3 {
         @include smallSlogan();
         margin-bottom: 35px;
+        @include _1280() {
+          margin-bottom: 30px;
+        }
+        @include _1024() {
+          margin-bottom: 25px;
+        }
+        @include _768() {
+          margin-bottom: 20px;
+        }
+        @include _400() {
+          margin-bottom: 15px;
+        }
       }
+
       ul > li {
         position: relative;
         margin-bottom: 30px;
         padding-left: 17px;
         &:last-child {
-          margin-bottom: 70px;
+          margin: 0;
         }
+        @include _1280() {
+          margin-bottom: 20px;
+          padding-left: 14px;
+        }
+        @include _1024() {
+          margin-bottom: 15px;
+          padding-left: 11px;
+        }
+        @include _768() {
+          margin-bottom: 10px;
+          padding-left: 9px;
+        }
+        @include _400() {
+          margin-bottom: 5px;
+          padding-left: 6px;
+        }
+
         &::before {
           content: "";
           width: 5px;
           height: 9px;
           position: absolute;
           background-image: url(./images/arrow.svg);
+          background-size: contain;
           left: 0;
           top: calc(50% - 4.5px);
+          @include _1024() {
+            width: 4px;
+            height: 8px;
+            top: calc(50% - 2px);
+          }
+          @include _768() {
+            width: 3px;
+            height: 6px;
+            top: calc(50% - 1px);
+          }
         }
       }
+
       .contacts__list > li {
         padding-left: 30px;
         position: relative;
         &:first-child::before {
           content: "";
           width: 15px;
-          height: 11.42px;
+          height: 12px;
           position: absolute;
           background-image: url(./images/mail.svg);
           background-position: center;
+          background-size: cover;
           top: calc(50% - 6px);
           left: 0;
+          @include _1024() {
+            width: 14px;
+            height: 11px;
+            top: calc(50% - 4px);
+          }
+          @include _768() {
+            width: 13px;
+            height: 10px;
+            top: calc(50% - 2px);
+          }
         }
         &:nth-child(2)::before {
           content: "";
           width: 15px;
           height: 15px;
           position: absolute;
+          background-size: cover;
           background-image: url(./images/phone.svg);
           background-position: center;
           top: calc(50% - 8px);
           left: 0;
+          @include _1024() {
+            width: 14px;
+            height: 14px;
+            top: calc(50% - 6px);
+          }
+          @include _768() {
+            width: 13px;
+            height: 13px;
+            top: calc(50% - 4px);
+          }
         }
         &:last-child::before {
           content: "";
@@ -1646,9 +1755,20 @@ footer {
           height: 15px;
           position: absolute;
           background-image: url(./images/placeholder.svg);
+          background-size: cover;
           background-position: center;
           top: calc(50% - 8px);
           left: 0;
+          @include _1024() {
+            width: 10px;
+            height: 14px;
+            top: calc(50% - 6px);
+          }
+          @include _768() {
+            width: 9px;
+            height: 13px;
+            top: calc(50% - 4px);
+          }
         }
       }
       li > a {
@@ -1656,6 +1776,22 @@ footer {
         font-weight: 400;
         line-height: $fs + 6px;
         color: $grey;
+        @include _1280 {
+          font-size: $fs - 2px;
+          line-height: $fs + 2px;
+        }
+        @include _1024 {
+          font-size: $fs - 4px;
+          line-height: $fs;
+        }
+        @include _768 {
+          font-size: $fs - 6px;
+          line-height: $fs - 4px;
+        }
+        @include _640 {
+          font-size: $fs - 8px;
+          line-height: $fs - 6px;
+        }
       }
     }
   }
@@ -1666,5 +1802,21 @@ footer {
     font-weight: 400;
     color: $grey;
     margin-bottom: 30px;
+    @include _1280 {
+      font-size: $fs - 5px;
+      line-height: $fs + 3px;
+    }
+    @include _1024 {
+      font-size: $fs - 6px;
+      line-height: $fs + 1px;
+    }
+    @include _768 {
+      font-size: $fs - 7px;
+      line-height: $fs;
+    }
+    @include _640 {
+      font-size: $fs - 10px;
+      line-height: $fs - 1px;
+    }
   }
 }
